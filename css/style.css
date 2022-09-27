@@ -1,0 +1,500 @@
+/* importación de fuente desde Google Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    margin-top: 93px;
+}
+
+/* imágen de portada */
+
+.portada {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+}
+
+
+
+/* titulo prinicpal */
+
+#tituloPrincipal {
+    text-align: center;
+    font-size: 100px;
+    font-family: 'Bebas Neue', cursive;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+/* logo */
+
+#logo {
+    width: 85px;
+    height: 85px;
+    border-radius: 100px;
+    margin: 2px 0px 2px 10px;
+}
+
+
+
+/* barra navegación */
+header {
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+}
+
+.navbar {
+    float: right;
+    text-align: right;
+    font-size: 30px;
+    margin: 35px 50px -10px 0px;
+}
+
+a {
+    padding: 0px 30px 0px 0px;
+    text-decoration: none;
+    color: white;
+}
+
+header {
+    background-color: #1e2428
+}
+
+
+/* subtitulos */
+
+.subtitulos {
+    text-align: left;
+    font-size: 30px;
+}
+
+.ourServices {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+
+/* footer */
+
+footer {
+    background-color: #1e2428;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 50px;
+    height: 185px;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.infoCreador {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+}
+
+.infoGym p {
+    color: white;
+    font-size: 20px;
+    margin: 0px 0px 10px 50px;
+}
+
+.infoFooter {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    margin-top: 10px;
+}
+
+
+/* redes sociales */
+
+.socialMedia p {
+    color: white;
+    text-align: left;
+}
+
+i {
+    font-size: 30px;
+    margin: 10px -35px 10px 30px;
+}
+
+.socialMedia {
+    text-align: center;
+    margin-left: 700px;
+}
+
+
+
+/* index */
+
+
+.aboutUs p{
+    margin: 10px 10px 0px 10px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.aboutUS p {
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+.p_bienvenidos {
+    font-size: 50px !important;
+    margin-top: 20px !important;
+}
+
+.servicios {
+    width: 500px;
+    height: 500px;
+}
+
+.tituloOurServices {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 70px;
+    background-color: #1e2428;
+    color: white;
+    padding: 20px;
+}
+
+.serv1 {
+    margin-left: 50px;
+    margin-right: 40px;
+}
+
+.serv1 div {
+    margin-bottom: 90px;
+}
+
+.serv2 {
+    margin-left: 40px;
+    margin-right: 50px;
+}
+
+.serv2 div {
+    margin-bottom: 90px;
+}
+
+.serv2 p {
+    padding-right: 75px;
+    padding-left: 75px;
+    margin-bottom: 50px;
+}
+
+
+.ourServices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.tituloServicio {
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.pOurServices {
+    text-align: center;
+    font-size: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.reseñas h2 {
+    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: 60px;
+    background-color: #1e2428;
+    color: white;
+    padding: 15px;
+}
+
+.reseñas p {
+    font-size: 18px;
+    margin-right: 50px;
+    margin-left: 50px;
+    padding: 20px;
+
+}
+
+
+.clientes {
+    height: 200px;
+    width: 190px;
+    border-radius: 5%;
+}
+
+.comentarios {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.comentarios div {
+    width: 370px;
+}
+
+.reseñas {
+    text-align: center;
+}
+
+
+
+/* planes */
+
+.nuestrosPlanes h2 {
+    margin-top: 125px;
+    text-align: center;
+    font-size: 35px;
+    background-color: #1e2428;
+    color: white;
+    padding: 20px;
+}
+
+.promo {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.planes {
+    margin-right: 50px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between
+}
+
+.planes img {
+    width: 400px;
+    height: 450px;
+    margin: 30px;
+}
+
+
+/* horarios */
+
+.nuestrosHorarios h2 {
+    margin-top: 125px;
+    font-size: 35px;
+    background-color: #1e2428;
+    color: white;
+    padding: 20px;
+}
+
+.nuestrosHorarios {
+    text-align: center;
+}
+
+.nuestrosHorarios img {
+    width: 1400px;
+    height: 500px;
+}
+
+.nuestrosHorarios p {
+    font-size: 18px;
+}
+
+
+/* profes */
+
+.nuestroTeam p {
+    font-size: 20px;
+    margin-right: 0px;
+}
+
+.nuestroTeam h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 50px;
+    background-color: #1e2428;
+    color: white;
+    padding: 20px;
+}
+
+.nuestroTeam h3 {
+    font-size: 30px;
+    padding-top: 70px;
+    margin-bottom: 25px;
+}
+
+.profes {
+    width: 350px;
+    height: 400px;
+    border-radius: 5%;
+}
+
+.divNuestroTeam {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+
+}
+
+.divNuestroTeam2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.der {
+    text-align: right;
+    margin-right: 50px;
+    margin-left: 150px;
+}
+
+.izq {
+    text-align: left;
+    margin-left: 50px;
+    margin-right: 150px;
+}
+
+.notaEditor {
+    font-size: 20px !important;
+    margin-top: 120px;
+}
+
+
+/* faqs */
+
+.preguntasFrecuentes div {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.preguntasFrecuentes h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 50px;
+    background-color: #1e2428;
+    color: white;
+    padding: 20px;
+}
+
+.preguntasFrecuentes h3 {
+    font-size: 30px;
+}
+
+.preguntasFrecuentes p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+
+/* contacto */
+
+.imgContacto {
+    height: 600px;
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+.contacto h2 {
+    font-size: 35px;
+    text-align: center;
+    background-color: #1e2428;
+    color: white;
+    padding: 20px;
+    margin-top: 125px;
+    margin-bottom: 50px;
+}
+
+.formularioContacto {
+    width: 460px;
+    height: auto;
+    border-radius: 10px;
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+#Enviar {
+    width: 90px;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 200px;
+    margin-top: 10px ;
+}
+
+form label {
+    font-size: 25px;
+}
+
+form ::placeholder{
+    font-size: 15px;
+    text-align: center;
+}
+
+input {
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+}
+
+#mensaje {
+    height: 250px;
+}
+
+.imgFormulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: baseline;
+    font-size: 20px;
+    text-align: left;
+}
+
+.pContacto {
+    text-align: center;
+    font-size: 25px;
+    padding: 0px 150px 0px 150px
+}
+
+.pContacto2 {
+    margin-top: 70px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.pContacto3 {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.mapa {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.direccion p {
+    text-align: center;
+    font-size: 20px;
+}
