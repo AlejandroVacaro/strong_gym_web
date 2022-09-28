@@ -5,32 +5,90 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <script src="https://kit.fontawesome.com/00e9b02c88.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Inicio</title>
 </head>
 
 <body>
+
+    <!-- navbar -->
+
     <header>
-        <a href="./index.html"><img id="logo" src="./img/logo_2.jpg" alt="img_logo"></a>
-        <nav class="navbar">
-            <ul>
-                <li class="navbarList">
-                    <a href="index.html">Inicio</a>
-                    <a href="./sections/planes.html">Planes</a>
-                    <a href="./sections/horarios.html">Horarios</a>
-                    <a href="./sections/profes.html">Profes</a>
-                    <a href="./sections/faqs.html">FAQs</a>
-                    <a href="./sections/contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="./index.html"><img id="logo" src="./img/logo_2.jpg" alt="img_logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 navbar-margin fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sections/planes.html">PLANES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sections/horarios.html">HORARIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sections/profes.html">PROFES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sections/faqs.html">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sections/contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <img class="portada" src="./img/gym_1.jpg" alt="gimnasio_1">
-    <hr>
+
+    <!-- carousel -->
+
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/gym_1.jpg" class="d-block w-100" alt="img_gym1">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/gym_2.jpg" class="d-block w-100" alt="img_gym2">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/gym_3.jpg" class="d-block w-100" alt="img_gym3">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/gym_4.jpg" class="d-block w-100" alt="img_gym4">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/gym_5.jpg" class="d-block w-100" alt="img_gym5">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
     <main>
+
+        <!-- about us -->
+
         <h1 id="tituloPrincipal">Strong gym</h1>
-        <section class="aboutUs">
+        <section class="aboutUs" data-aos="zoom-in">
             <p>Somos mucho más que un gimnasio, somos un lugar de encuentro, un espacio dedicado a
                 vos.</p>
             <p>La idea de este gimnasio surgió alrededor del 2017, como un sueño lejano e
@@ -38,102 +96,128 @@
             <p>Con el paso del tiempo esta idea fue tomando forma y materializándose hasta que por
                 fin el Strong gym abrió sus puertas en 2019.</p>
             <p>Desde entonces y hasta la fecha no hemos hecho mas que dedicarnos al servicio de
-                nuestros clientes, mejorando la infraestructura, incorporando mas y mejores maquinas, sumando clases y
+                nuestros clientes, mejorando la infraestructura, incorporando mas y mejores maquinas, sumando
+                clases y
                 demás servicios.</p>
             <p class="p_bienvenidos">¡Bienvenidos!</p>
         </section>
+
+        <!-- servicios -->
+
         <section>
-            <h2 class="tituloOurServices">Nuestros servicios</h2>
-            <article class="ourServices">
-                <div class="serv1">
-                    <div>
+            <h2 class="secciones">Nuestros servicios</h2>
+            <article class="ourServices container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12 serv" data-aos="zoom-in">
                         <img class="servicios" src="./img/servicios_sala_musc.jpg" alt="img_sala_musc">
                         <h3 class="tituloServicio">Sala de musculación</h3>
-                        <p class="pOurServices">Contamos con una amplia sala de musculación donde podrás entrenar a
+                        <p class="pOurServices">Contamos con una amplia sala de musculación donde podrás
+                            entrenar a
                             diario, tanto con
                             ejercicios
                             de
-                            fuerza como con ejercicios de cardio. Contamos con personal capacitado para la confección de
-                            rutinas, indicaciones de ejercicios, responder preguntas, además de supervisar en todo
+                            fuerza como con ejercicios de cardio. Contamos con personal capacitado para la
+                            confección de
+                            rutinas, indicaciones de ejercicios, responder preguntas, además de supervisar en
+                            todo
                             momento
                             la
-                            correcta ejecución de los ejercicios, asegurando que los mismos sean beneficios para la
+                            correcta ejecución de los ejercicios, asegurando que los mismos sean beneficios para
+                            la
                             salud de
                             nuestros clientes. </p>
                     </div>
-                    <div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 serv" data-aos="zoom-in">
                         <img class="servicios" src="./img/servicios_personal_trainer.jpg" alt="img_personal_trainer">
                         <h3 class="tituloServicio">Entrenamiento personalizado</h3>
                         <p class="pOurServices">Si sos de los que les gustan que lo guíen todo el tiempo en su
                             entrenamiento, de los que
                             necesitan
-                            una permanente motivación y un riguroso seguimiento, tenemos para ofrecerte un entrenamiento
-                            personalizado. Con esta modalidad tendrás un profesor dedicado exclusivamente a ti, te
+                            una permanente motivación y un riguroso seguimiento, tenemos para ofrecerte un
+                            entrenamiento
+                            personalizado. Con esta modalidad tendrás un profesor dedicado exclusivamente a ti,
+                            te
                             haremos
                             una
-                            evaluación integral para conocer tu estado físico actual, tus metas, establecer objetivos y
+                            evaluación integral para conocer tu estado físico actual, tus metas, establecer
+                            objetivos y
                             medir tu
                             progreso. </p>
                     </div>
-                    <div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 serv" data-aos="zoom-in">
                         <img class="servicios" src="./img/servicios_crossfit.jpg" alt="img_crossfit">
                         <h3 class="tituloServicio">Crossfit</h3>
-                        <p class="pOurServices">El CrossFit se define como un sistema de entrenamiento de fuerza y
+                        <p class="pOurServices">El CrossFit se define como un sistema de entrenamiento de fuerza
+                            y
                             acondicionamiento basado
                             en
-                            ejercicios funcionales constantemente variados realizados a una alta intensidad. Esto
+                            ejercicios funcionales constantemente variados realizados a una alta intensidad.
+                            Esto
                             significa
                             que
-                            nos valemos de una gran cantidad de ejercicios y disciplinas deportivas de entre las cuales
-                            seleccionamos técnicas o movimientos aplicables a la vida diaria y los combinamos de muchas
+                            nos valemos de una gran cantidad de ejercicios y disciplinas deportivas de entre las
+                            cuales
+                            seleccionamos técnicas o movimientos aplicables a la vida diaria y los combinamos de
+                            muchas
                             formas
                             diferentes en entrenamientos intensos.</p>
                     </div>
-                </div>
-                <div class="serv2">
-                    <div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 serv" data-aos="zoom-in">
                         <img class="servicios" src="./img/servicios_funcional.jpg" alt="img_funcional">
                         <h3 class="tituloServicio">Funcional</h3>
-                        <p class="pOurServices">El entrenamiento funcional se basa en realizar ejercicios que se adaptan
+                        <p class="pOurServices">El entrenamiento funcional se basa en realizar ejercicios que se
+                            adaptan
                             a los movimientos
                             naturales
-                            del cuerpo humano para trabajar de forma global músculos y articulaciones. Una de sus
+                            del cuerpo humano para trabajar de forma global músculos y articulaciones. Una de
+                            sus
                             principales
-                            ventajas es que se adaptan completamente a las condiciones físicas de cada persona, por eso
+                            ventajas es que se adaptan completamente a las condiciones físicas de cada persona,
+                            por eso
                             resulta
-                            muy efectivo como entrenamiento personal: mejora la movilidad corporal, la agilidad y el
+                            muy efectivo como entrenamiento personal: mejora la movilidad corporal, la agilidad
+                            y el
                             equilibrio,
-                            desarrolla la salud cardiovascular, corrige la postura, fortalece la masa muscular y ayuda a
+                            desarrolla la salud cardiovascular, corrige la postura, fortalece la masa muscular y
+                            ayuda a
                             mantener el peso.</p>
                     </div>
-                    <div>
+                    <div class="col-lg-4 col-md-6 col-sm-12 serv" data-aos="zoom-in">
                         <img class="servicios" src="./img/servicios_pilates.jpg" alt="img_pilates">
                         <h3 class="tituloServicio">Pilates</h3>
-                        <p class="pOurServices">Pilates es un sistema de entrenamiento físico y mental basado distintas
+                        <p class="pOurServices">Pilates es un sistema de entrenamiento físico y mental basado
+                            distintas
                             especialidades como
                             gimnasia,
-                            traumatología y yoga; uniendo el dinamismo y la fuerza muscular con el control mental, la
-                            respiración y la relajación. En pilates se trabaja el uso de la mente para controlar el
+                            traumatología y yoga; uniendo el dinamismo y la fuerza muscular con el control
+                            mental, la
+                            respiración y la relajación. En pilates se trabaja el uso de la mente para controlar
+                            el
                             cuerpo,
                             pero
                             buscando el equilibrio y la unidad entre ambos. </p>
                     </div>
-                    <div class="spinning">
+                    <div class="col-lg-4 col-md-6 col-sm-12 serv" data-aos="zoom-in">
                         <img class="servicios" src="./img/servicios_spinning.jpg" alt="img_spinning">
                         <h3 class="tituloServicio">Spinning</h3>
-                        <p class="pOurServices">Desde hace una década el 'spinning' se ha convertido en una de las
+                        <p class="pOurServices">Desde hace una década el 'spinning' se ha convertido en una de
+                            las
                             disciplinas de
                             entrenamiento
                             más
-                            exitosas del 'fitness', tiene grandes puntos a favor. Puede parecer que el spinning es
+                            exitosas del 'fitness', tiene grandes puntos a favor. Puede parecer que el spinning
+                            es
                             simplemente
-                            hacer ejercicio sobre una bicicleta estática, pero hay muchos aspectos de esta disciplina
+                            hacer ejercicio sobre una bicicleta estática, pero hay muchos aspectos de esta
+                            disciplina
                             que
                             están
-                            especialmente pensados para que realices un gran progreso en tu entrenamiento sin que apenas
+                            especialmente pensados para que realices un gran progreso en tu entrenamiento sin
+                            que apenas
                             te
                             des
-                            cuenta, en muy poco tiempo notarás una notable tonificación del tren inferior, porque el
+                            cuenta, en muy poco tiempo notarás una notable tonificación del tren inferior,
+                            porque el
                             spinning te
                             ayuda a quemar calorías y tonificar glúteos y piernas a gran velocidad.</p>
                     </div>
@@ -141,30 +225,44 @@
             </article>
             <section>
     </main>
+
+    <!-- reseñas -->
+
     <article class="reseñas">
-        <h2>Comentarios de nuestros clientes:</h2>
-        <div class="comentarios">
-            <div>
-                <img class="clientes" src="./img/reseñas_1.jpg" alt="img_cliente_1">
-                <p>Empecé a ir por recomendación médica y hoy en día voy por voluntad propia, el ejercicio es bueno para
-                    el
-                    cuerpo y el alma!</p>
-            </div>
-            <div>
-                <img class="clientes" src="./img/reseñas_2.jpg" alt="img_cliente_2">
-                <p>Es un espacio increíble! Me cambió la forma de vida, no lo dejo por nada!</p>
-            </div>
-            <div>
-                <img class="clientes" src="./img/reseñas_3.jpg" alt="img_cliente_3">
-                <p>El Strong lo es todo! La gente y los profes tienen todos muy buena onda.</p>
-            </div>
-            <div>
-                <img class="clientes" src="./img/reseñas_4.jpg" alt="img_cliente_4">
-                <p>Es mi momento en el día, lo vivo como algo terapéutico. Desde que voy al Strong me siento más joven!
-                </p>
+        <h2 class="secciones">Comentarios de nuestros clientes:</h2>
+        <div class="comentarios container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img class="clientes" src="./img/reseñas_1.jpg" alt="img_cliente_1">
+                    <p>Empecé a ir por recomendación médica y hoy en día voy por voluntad propia, el ejercicio es
+                        bueno para
+                        el
+                        cuerpo y el alma!</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img class="clientes" src="./img/reseñas_2.jpg" alt="img_cliente_2">
+                    <p>Es un espacio increíble! Me cambió la forma de vida, no lo dejo por nada!</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img class="clientes" src="./img/reseñas_3.jpg" alt="img_cliente_3">
+                    <p>El Strong lo es todo! La gente y los profes tienen todos muy buena onda.</p>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-12" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img class="clientes" src="./img/reseñas_4.jpg" alt="img_cliente_4">
+                    <p>Es mi momento en el día, lo vivo como algo terapéutico. Desde que voy al Strong me siento más
+                        joven!
+                    </p>
+                </div>
             </div>
         </div>
     </article>
+
+    <!-- footer -->
+
     <footer>
         <section class="infoFooter">
             <div class="infoGym">
@@ -186,6 +284,13 @@
             <p>Sitio web creado por Alejandro Vacaro - 2022</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

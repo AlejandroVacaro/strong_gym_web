@@ -5,71 +5,220 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <script src="https://kit.fontawesome.com/00e9b02c88.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>FAQs</title>
 </head>
 
 <body>
+
+    <!-- navbar -->
+
     <header>
-        <a href="../index.html"><img id="logo" src="../img/logo_2.jpg" alt="img_logo"></a>
-        <nav class="navbar">
-            <ul>
-                <li class="navbarList">
-                    <a href="../index.html">Inicio</a>
-                    <a href="planes.html">Planes</a>
-                    <a href="horarios.html">Horarios</a>
-                    <a href="profes.html">Profes</a>
-                    <a href="faqs.html">FAQs</a>
-                    <a href="contacto.html">Contacto</a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a href="../index.html"><img id="logo" src="../img/logo_2.jpg" alt="img_logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0 navbar-margin fw-semibold">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./planes.html">PLANES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./horarios.html">HORARIOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./profes.html">PROFES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./faqs.html">FAQs</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
+
     <section class="preguntasFrecuentes">
-        <h2>Preguntas frecuentes</h2>
-        <div>
-            <h3>¿Dónde se encuentra el gimnasio y qué horario tiene?</h3>
-            <p>Nos encontrás en la calle La Paz 1928, en la ciudad de Montevideo. Estamos abiertos de 07:00 a 22:30hs.
-                de
-                lunes a sábados.</p>
-            <h3>¿Cómo me suscribo a algunos de los planes?</h3>
-            <p>Si es la primera vez que vienes al gimnasio, te tomaremos tus datos para crear tu ficha y luego te
-                ingresamos
-                al plan que elijas.</p>
-            <p>Si ya eres parte del gimnasio, solamente habla con el profe de sala y él te ingresará en el plan que
-                quieras!
-            </p>
-            <h3>Tengo algunas dudas sobre cual elegir, ¿me pueden guiar?</h3>
-            <p>Si, por supuesto! Nuestros profes de sala te ayudarán a decidirte por el plan que mas se adapte a tus
-                gustos
-                y horarios! </p>
-            <h3>No estoy muy seguro de querer empezar, ¿puedo ir a una clase gratis y ver como me siento para luego
-                decidir?
-            </h3>
-            <p>La respuesta es: SI! Todos tienen la primera clase gratis, incluso si ya eres parte del gimnasio y
-                quieres
-                probar otra clase!!! </p>
-            <h3>¿Existe limite de edad para comenzar el gimnasio?</h3>
-            <p>No! Los limites solo están en nuestra cabeza. </p>
-            <h3>Tengo problemas de salud que me limitan en ciertos movimientos o esfuerzo ¿igualmente puedo ir?</h3>
-            <p>En principio sí. Todas las clases o ejercicios te las podemos adaptar para que los realices sin poner en
-                riesgo tu salud. Por favor avisanos apenas te registres así todos estamos en conocimiento.</p>
-            <h3>¿Cómo pago la mensualidad?</h3>
-            <p>Se puede abonar por medio de efectivo, transferencia bancaria o tarjeta de débito. Próximamente tendremos
-                también la opción de débito automático con algunos bancos. </p>
-            <h3>¿Si me voy de vacaciones, o me ausento por un tiempo, a la vuelta debo abonar la matrícula nuevamente?
-            </h3>
-            <p>Bueno… eso depende. Si pasan más de tres meses que dejaste de venir, sí, deberás pagar la matricula
-                nuevamente. Otra opción es pagar la cuota de mantenimiento, que es una cuota mensual de $300 que te
-                exonera
-                de pagar la matrícula cuando regreses. </p>
-            <h3>Ya tengo un entrenador personal, pero necesitamos las instalaciones de un gimnasio, ¿podemos utilizar
-                las
-                del Strong gym?</h3>
-            <p>Siii, claro! Lo único que tanto entrenador como alumno deberán suscribirse al plan que se ajuste con el
-                entrenamiento que vayan a realizar.</p>
+        <h1 class="secciones">Preguntas frecuentes</h1>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        ¿Dónde se encuentra el gimnasio y qué horario tiene?
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Nos encontrás en la calle La Paz 1928, en la ciudad de Montevideo. Estamos abiertos de 07:00 a
+                        22:30hs.
+                        de
+                        lunes a sábados.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        ¿Cómo me suscribo a algunos de los planes?
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Si es la primera vez que vienes al gimnasio, te tomaremos tus datos para crear tu ficha y luego
+                        te
+                        ingresamos
+                        al plan que elijas.
+                        Si ya eres parte del gimnasio, solamente habla con el profe de sala y él te ingresará en el plan
+                        que
+                        quieras!
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Tengo algunas dudas sobre cual elegir, ¿me pueden guiar?
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Si, por supuesto! Nuestros profes de sala te ayudarán a decidirte por el plan que mas se adapte
+                        a tus
+                        gustos
+                        y horarios!
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        No estoy muy seguro de querer empezar, ¿puedo ir a una clase gratis y ver como me siento para
+                        luego
+                        decidir?
+
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        La respuesta es: SI! Todos tienen la primera clase gratis, incluso si ya eres parte del gimnasio
+                        y
+                        quieres
+                        probar otra clase!!!
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFive">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                        ¿Existe limite de edad para comenzar el gimnasio?
+                    </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        No! Los limites solo están en nuestra cabeza.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSix">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                        Tengo problemas de salud que me limitan en ciertos movimientos o esfuerzo ¿igualmente puedo ir?
+                    </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        En principio sí. Todas las clases o ejercicios te las podemos adaptar para que los realices sin
+                        poner en
+                        riesgo tu salud. Por favor avisanos apenas te registres así todos estamos en conocimiento.
+
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingSeven">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                        ¿Cómo pago la mensualidad?
+                    </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Se puede abonar por medio de efectivo, transferencia bancaria o tarjeta de débito. Próximamente
+                        tendremos
+                        también la opción de débito automático con algunos bancos.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingEight">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                        ¿Si me voy de vacaciones, o me ausento por un tiempo, a la vuelta debo abonar la matrícula
+                        nuevamente?
+                    </button>
+                </h2>
+                <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Bueno… eso depende. Si pasan más de tres meses que dejaste de venir, sí, deberás pagar la
+                        matricula
+                        nuevamente. Otra opción es pagar la cuota de mantenimiento, que es una cuota mensual de $300 que
+                        te
+                        exonera
+                        de pagar la matrícula cuando regreses.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingNine">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                        Ya tengo un entrenador personal, pero necesitamos las instalaciones de un gimnasio, ¿podemos
+                        utilizar
+                        las
+                        del Strong gym?
+                    </button>
+                </h2>
+                <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        Siii, claro! Lo único que tanto entrenador como alumno deberán suscribirse al plan que se ajuste con el
+                entrenamiento que vayan a realizar.
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
     <footer>
         <section class="infoFooter">
@@ -92,6 +241,9 @@
             <p>Sitio web creado por Alejandro Vacaro - 2022</p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

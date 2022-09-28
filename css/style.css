@@ -4,7 +4,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 * {
-    list-style: none;
     margin: 0px;
     padding: 0px;
 }
@@ -13,39 +12,30 @@
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
-    margin-top: 93px;
+    margin-top: 5em;
+    background-color: #212121;
 }
 
-/* imágen de portada */
-
-.portada {
-    display: block;
-    width: 100%;
-    height: auto;
-    background-size: cover;
-}
-
+/* carousel de portada */
 
 
 /* titulo prinicpal */
 
 #tituloPrincipal {
+    color: white;
     text-align: center;
-    font-size: 100px;
+    font-size: 6rem;
     font-family: 'Bebas Neue', cursive;
-    margin-top: 0px;
-    margin-bottom: 0px;
 }
-
 
 
 /* logo */
 
 #logo {
-    width: 85px;
-    height: 85px;
+    width: 4em;
+    height: 4em;
     border-radius: 100px;
-    margin: 2px 0px 2px 10px;
+    margin: 0.1em 2em 0.1em 0.3em;
 }
 
 
@@ -53,26 +43,22 @@ body {
 /* barra navegación */
 header {
     position: fixed;
+    z-index: 10 !important;
     top: 0px;
     right: 0px;
     left: 0px;
 }
 
-.navbar {
-    float: right;
-    text-align: right;
-    font-size: 30px;
-    margin: 35px 50px -10px 0px;
+.navbar-margin {
+    margin-right: 1.5rem;
 }
 
-a {
-    padding: 0px 30px 0px 0px;
-    text-decoration: none;
-    color: white;
+.navbar-margin li {
+    margin-right: 1rem;
 }
 
-header {
-    background-color: #1e2428
+.nav-item {
+    font-size: 1.5rem;
 }
 
 
@@ -81,46 +67,47 @@ header {
 .subtitulos {
     text-align: left;
     font-size: 30px;
+    color: #B9F852;
 }
 
 .ourServices {
     text-align: center;
-    font-size: 30px;
+    color: #B9F852;
 }
-
 
 
 /* footer */
 
 footer {
-    background-color: #1e2428;
+    background-color: #212529;
     position: relative;
     bottom: 0px;
     left: 0px;
     right: 0px;
-    padding-top: 50px;
-    height: 185px;
+    padding-top: 5rem;
+    height: auto;
     width: 100%;
-    margin-top: 150px;
+    margin-top: 10rem;
 }
 
 .infoCreador {
     color: white;
-    font-size: 15px;
+    font-size: 0.8rem;
     text-align: center;
+    padding-bottom: 0.1rem;
 }
 
 .infoGym p {
     color: white;
-    font-size: 20px;
-    margin: 0px 0px 10px 50px;
+    font-size: 1rem;
+    margin: 0px 0px 1rem 2rem;
 }
 
 .infoFooter {
     display: flex;
     flex-direction: row;
     align-items: baseline;
-    margin-top: 10px;
+    margin-top: 2rem;
 }
 
 
@@ -128,17 +115,18 @@ footer {
 
 .socialMedia p {
     color: white;
-    text-align: left;
 }
 
 i {
-    font-size: 30px;
-    margin: 10px -35px 10px 30px;
+    font-size: 1rem;
+    margin: 0.2em 0.5em 1em 0.5em;
+    font-size: 2rem;
 }
 
 .socialMedia {
     text-align: center;
-    margin-left: 700px;
+    margin-left: auto;
+    margin-right: 5rem;
 }
 
 
@@ -147,113 +135,72 @@ i {
 
 
 .aboutUs p{
-    margin: 10px 10px 0px 10px;
+    margin: 0.5em 2em 0em 2em;
+    color: white;
     text-align: center;
-    font-size: 25px;
-}
-
-.aboutUS p {
-    margin-top: 15px;
+    font-size: 1.5em;
+    margin-top: 1rem;
     margin-bottom: 0px;
 }
 
 .p_bienvenidos {
-    font-size: 50px !important;
-    margin-top: 20px !important;
+    font-size: 3em !important;
+    margin-top: 2rem !important;
+    color: #B9F852 !important;
+}
+
+
+.secciones {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 2.5rem;
+    margin-top: 3.5rem;
+    background-color: #B9F852;
+    color: #212121;
+    font-weight: bold;
+    padding: 0.5em;
 }
 
 .servicios {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: auto;
 }
 
-.tituloOurServices {
-    font-size: 35px;
-    text-align: center;
-    margin-bottom: 50px;
-    margin-top: 70px;
-    background-color: #1e2428;
-    color: white;
-    padding: 20px;
-}
-
-.serv1 {
-    margin-left: 50px;
-    margin-right: 40px;
-}
-
-.serv1 div {
-    margin-bottom: 90px;
-}
-
-.serv2 {
-    margin-left: 40px;
-    margin-right: 50px;
-}
-
-.serv2 div {
-    margin-bottom: 90px;
-}
-
-.serv2 p {
-    padding-right: 75px;
-    padding-left: 75px;
-    margin-bottom: 50px;
-}
-
-
-.ourServices {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
+.serv {
+    padding: 1.5rem;
 }
 
 .tituloServicio {
-    font-size: 30px;
-    margin-top: 10px;
+    font-weight: bold;
+    margin-top: 0.5em;
 }
 
 .pOurServices {
-    text-align: center;
-    font-size: 20px;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: 10px;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-top: 0.5em;
+    margin-bottom: 3rem;
+    color: white;
 }
 
-.reseñas h2 {
-    font-size: 30px;
-    margin-top: 70px;
-    margin-bottom: 60px;
-    background-color: #1e2428;
-    color: white;
-    padding: 15px;
-}
 
 .reseñas p {
-    font-size: 18px;
-    margin-right: 50px;
-    margin-left: 50px;
-    padding: 20px;
-
+    color: white;
+    text-align: justify;
+    font-size: 1.2em;
+    margin: 2rem;
 }
 
 
 .clientes {
-    height: 200px;
-    width: 190px;
+    height: auto;
+    width: 80%;
     border-radius: 5%;
+
 }
 
 .comentarios {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between;
-}
-
-.comentarios div {
-    width: 370px;
+    margin-top: 5em;
 }
 
 .reseñas {
@@ -264,13 +211,8 @@ i {
 
 /* planes */
 
-.nuestrosPlanes h2 {
-    margin-top: 125px;
-    text-align: center;
-    font-size: 35px;
-    background-color: #1e2428;
-    color: white;
-    padding: 20px;
+.nuestrosPlanes {
+    margin-top: 7rem;
 }
 
 .promo {
@@ -295,16 +237,10 @@ i {
 
 /* horarios */
 
-.nuestrosHorarios h2 {
-    margin-top: 125px;
-    font-size: 35px;
-    background-color: #1e2428;
-    color: white;
-    padding: 20px;
-}
 
 .nuestrosHorarios {
     text-align: center;
+    margin-top: 7rem;
 }
 
 .nuestrosHorarios img {
@@ -319,30 +255,26 @@ i {
 
 /* profes */
 
-.nuestroTeam p {
-    font-size: 20px;
-    margin-right: 0px;
+.nuestroTeam {
+    margin-top: 7rem;
 }
 
-.nuestroTeam h2 {
-    font-size: 35px;
-    text-align: center;
-    margin-top: 125px;
-    margin-bottom: 50px;
-    background-color: #1e2428;
+.nuestroTeam p {
+    font-size: 1.2em;
     color: white;
-    padding: 20px;
 }
+
 
 .nuestroTeam h3 {
-    font-size: 30px;
-    padding-top: 70px;
-    margin-bottom: 25px;
+    font-size: 2em;
+    padding-top: 5rem;
+    margin-bottom: 2rem;
+    color: #B9F852;
 }
 
 .profes {
-    width: 350px;
-    height: 400px;
+    width: 20rem;
+    height: auto;
     border-radius: 5%;
 }
 
@@ -384,14 +316,8 @@ i {
     margin-right: 50px;
 }
 
-.preguntasFrecuentes h2 {
-    font-size: 35px;
-    text-align: center;
-    margin-top: 125px;
-    margin-bottom: 50px;
-    background-color: #1e2428;
-    color: white;
-    padding: 20px;
+.preguntasFrecuentes {
+    margin-top: 7rem;
 }
 
 .preguntasFrecuentes h3 {
@@ -408,19 +334,13 @@ i {
 /* contacto */
 
 .imgContacto {
-    height: 600px;
-    width: 500px;
+    height: 100%;
+    width: auto;
     margin-bottom: 50px;
 }
 
-.contacto h2 {
-    font-size: 35px;
-    text-align: center;
-    background-color: #1e2428;
-    color: white;
-    padding: 20px;
-    margin-top: 125px;
-    margin-bottom: 50px;
+.contacto {
+    margin-top: 7rem;
 }
 
 .formularioContacto {
@@ -472,7 +392,8 @@ input {
 
 .pContacto {
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
+    color: white;
     padding: 0px 150px 0px 150px
 }
 
@@ -480,12 +401,14 @@ input {
     margin-top: 70px;
     text-align: center;
     font-size: 25px;
+    color: white;
 }
 
 .pContacto3 {
     margin-top: 50px;
     text-align: center;
     font-size: 25px;
+    color: white;
 }
 
 .mapa {
