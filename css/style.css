@@ -215,24 +215,27 @@ i {
     margin-top: 7rem;
 }
 
-.promo {
-    text-align: center;
-    margin-top: 50px;
+.promo img{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .planes {
-    margin-right: 50px;
-    margin-left: 50px;
+    margin-right: 2rem;
+    margin-left: 2rem;
     display: flex;
     flex-wrap: wrap;
     align-content: space-between
 }
 
 .planes img {
-    width: 400px;
-    height: 450px;
-    margin: 30px;
+    width: 25rem;
+    height: auto;
+    padding: 2rem;
 }
+
 
 
 /* horarios */
@@ -244,12 +247,14 @@ i {
 }
 
 .nuestrosHorarios img {
-    width: 1400px;
-    height: 500px;
+    width: 80%;
+    height: auto;
 }
 
 .nuestrosHorarios p {
     font-size: 18px;
+    color: white;
+    margin-top: 1rem;
 }
 
 
@@ -273,16 +278,16 @@ i {
 }
 
 .profes {
-    width: 20rem;
-    height: auto;
+    width: auto;
+    height: 25rem;
     border-radius: 5%;
 }
 
 .divNuestroTeam {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 10%;
+    margin-right: 10%;
 
 }
 
@@ -293,19 +298,19 @@ i {
 
 .der {
     text-align: right;
-    margin-right: 50px;
-    margin-left: 150px;
+    margin-right: 1rem;
+    margin-left: 2rem;
 }
 
 .izq {
     text-align: left;
-    margin-left: 50px;
-    margin-right: 150px;
+    margin-left: 1rem;
+    margin-right: 2rem;
 }
 
 .notaEditor {
-    font-size: 20px !important;
-    margin-top: 120px;
+    font-size: 1.2em !important;
+    margin-top: 10%;
 }
 
 
@@ -336,7 +341,6 @@ i {
 .imgContacto {
     height: 100%;
     width: auto;
-    margin-bottom: 50px;
 }
 
 .contacto {
@@ -344,33 +348,32 @@ i {
 }
 
 .formularioContacto {
-    width: 460px;
+    width: 35%;
     height: auto;
     border-radius: 10px;
-    margin-left: 200px;
-    margin-top: 80px;
+    margin-left: 10%;
+    margin-top: 2rem;
 }
 
 #Enviar {
-    width: 90px;
+    width: 7rem;
     text-align: center;
-    font-size: 15px;
-    margin-left: 200px;
-    margin-top: 10px ;
+    font-size: 1em;
+    margin-top: 1rem;
 }
 
 form label {
-    font-size: 25px;
+    font-size: 1.5rem;
 }
 
 form ::placeholder{
-    font-size: 15px;
+    font-size: 1em;
     text-align: center;
 }
 
 input {
-    width: 500px;
-    height: 40px;
+    width: 25em;
+    height: 2em;
     border-radius: 5px;
     border-style: solid;
     border-width: 1px;
@@ -378,7 +381,7 @@ input {
 }
 
 #mensaje {
-    height: 250px;
+    height: 15em;
 }
 
 .imgFormulario {
@@ -394,30 +397,31 @@ input {
     text-align: center;
     font-size: 1.5em;
     color: white;
-    padding: 0px 150px 0px 150px
+    padding: 0px 5em 0px 5em;
+    margin-top: 2em;
 }
 
 .pContacto2 {
-    margin-top: 70px;
+    margin-top: 2em;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
     color: white;
 }
 
 .pContacto3 {
-    margin-top: 50px;
+    margin-top: 2.5em;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
     color: white;
 }
 
 .mapa {
     display: flex;
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 2rem;
 }
 
 .direccion p {
     text-align: center;
-    font-size: 20px;
+    font-size: 1.5em;
 }
