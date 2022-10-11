@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 5em;
+    background-color: #212121;
+}
+
+/* logo */
+
+header {
+    position: fixed;
+    z-index: 10 !important;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+
+    #logo {
+        width: auto;
+        height: 4rem;
+        margin: 0.1em 2em 0.1em 1.3em;
+    }
+}
+
+
+.navbar-margin {
+    margin-right: 1.5rem;
+
+    li {
+        margin-right: 1rem;
+    }
+
+    .nav-item {
+        font-size: 1.5rem;
+    }
+}
+
+
+/* subtitulos */
+
+.subtitulos {
+    text-align: left;
+    font-size: 30px;
+    color: #B9F852;
+}
+
+.ourServices {
+    text-align: center;
+    color: #B9F852;
+}
+
+
+/* footer */
+
+footer {
+    background-color: #212529;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding-top: 1rem;
+    height: auto;
+    width: 100%;
+    margin-top: 10rem;
+
+    section {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        margin-top: 2rem;
+
+        .infoGym {
+            color: white;
+            font-size: 1rem;
+            margin: 0px 0px 1rem 2rem;
+        }
+
+        .socialMedia {
+            text-align: center;
+            margin-left: auto;
+            margin-right: 5rem;
+
+            i {
+                font-size: 1rem;
+                margin: 0.2em 0.5em 1em 0.5em;
+                font-size: 2rem;
+            }
+
+            p {
+                color: white;
+            }
+        }
+    }
+
+    .infoCreador {
+        text-align: center;
+        padding-bottom: 1rem;
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 0.8rem;
+            text-align: center;
+            padding-bottom: 0.1rem;
+        }
+    }
+
+}

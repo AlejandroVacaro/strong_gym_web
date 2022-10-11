@@ -1,0 +1,190 @@
+@media (max-width: 992px) {
+
+    .planes {
+        div {
+            img {
+                width: 100%;
+                height: auto;
+                padding: 1em;
+                margin-top: 2em;
+            }
+        }
+    }
+
+    .nuestroTeam {
+        .divNuestroTeam {
+            .divNuestroTeam2 {
+                margin-top: 3.5em;
+
+                h3 {
+                    padding: 0;
+                }
+            }
+        }
+    }
+
+    .imgFormulario {
+        .imgMancuerna {
+            display: none;
+        }
+
+        .formularioContacto {
+            margin-left: 0;
+        }
+
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+
+    .comentarios {
+        .row {
+            div {
+                width: 50%;
+            }
+        }
+    }
+
+    body {
+        footer {
+            section {
+                .infoGym {
+                    margin: 0rem 0rem 1rem 1rem;
+                    font-size: 0.8rem;
+                }
+            }
+
+            .socialMedia {
+                margin-right: 0rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    .nuestroTeam {
+        .divNuestroTeam {
+            .divNuestroTeam2 {
+                flex-direction: column;
+                text-align: center;
+
+                h3 {
+                    text-align: center;
+                    margin: 0px;
+                }
+
+                .profes {
+                    margin-top: 1rem;
+                }
+
+                .izq {
+                    margin: 1rem 0rem 0rem 0rem;
+
+                    p {
+                        text-align: center;
+                    }
+                }
+
+                .der {
+                    margin: 1rem 0rem 0rem 0rem;
+
+                    p {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+
+    .preguntasFrecuentes {
+        .FAQsAccordion {
+            .accordion-item {
+                h2 {
+                    button {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+
+@media (max-width: 576px) {
+
+
+    body {
+        .reseñas {
+            .comentarios {
+                .row {
+                    div {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        footer {
+            section {
+                flex-direction: column;
+                align-items: center;
+
+                .infoGym {
+                    text-align: center;
+                    align-items: center;
+                    margin: 0;
+                    font-size: 1rem;
+                }
+
+                .socialMedia {
+                    margin: 0;
+                    text-align: center;
+                    align-items: center;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .contacto {
+            .imgFormulario {
+                .formularioContacto {
+                    width: 100%;
+                    height: auto;
+
+                    form {
+                        align-items: center;
+
+                        input {
+                            width: 80%;
+                            height: auto;
+                        }
+
+                        textarea {
+                            width: 80%;
+                            height: auto;
+                        }
+                    }
+                }
+
+                div {
+
+                    p {
+                        padding: 0em 1em;
+                    }
+                }
+            }
+
+            .mapa {
+                width: 90%;
+                height: auto;
+            }
+        }
+
+
+    }
+
+
+}

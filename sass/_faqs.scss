@@ -1,0 +1,28 @@
+/* faqs */
+
+.preguntasFrecuentes {
+    margin-top: 7rem;
+    .FAQsAccordion {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        .accordion-button {
+            font-size: 1.5rem;
+            font-weight: bold;
+            background: inherit;
+            border-color: green;
+            color: inherit;  
+        }
+        .accordion-button:not(.collapsed) {
+            background: #B9F852;
+            color: inherit;
+        }
+        .accordion-body {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+    }    
+}
+
+
+

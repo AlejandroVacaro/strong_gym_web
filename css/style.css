@@ -1,427 +1,480 @@
+@charset "UTF-8";
 /* importación de fuente desde Google Fonts */
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0;
+  padding: 0;
 }
-
 
 body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0px;
-    margin-top: 5em;
-    background-color: #212121;
+  font-family: "Roboto", sans-serif;
+  margin-top: 5em;
+  background-color: #212121;
 }
-
-/* carousel de portada */
-
-
-/* titulo prinicpal */
-
-#tituloPrincipal {
-    color: white;
-    text-align: center;
-    font-size: 6rem;
-    font-family: 'Bebas Neue', cursive;
-}
-
 
 /* logo */
-
-#logo {
-    width: 4em;
-    height: 4em;
-    border-radius: 100px;
-    margin: 0.1em 2em 0.1em 0.3em;
-}
-
-
-
-/* barra navegación */
 header {
-    position: fixed;
-    z-index: 10 !important;
-    top: 0px;
-    right: 0px;
-    left: 0px;
+  position: fixed;
+  z-index: 10 !important;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+}
+header #logo {
+  width: auto;
+  height: 4rem;
+  margin: 0.1em 2em 0.1em 1.3em;
 }
 
 .navbar-margin {
-    margin-right: 1.5rem;
+  margin-right: 1.5rem;
 }
-
 .navbar-margin li {
-    margin-right: 1rem;
+  margin-right: 1rem;
 }
-
-.nav-item {
-    font-size: 1.5rem;
+.navbar-margin .nav-item {
+  font-size: 1.5rem;
 }
-
 
 /* subtitulos */
-
 .subtitulos {
-    text-align: left;
-    font-size: 30px;
-    color: #B9F852;
+  text-align: left;
+  font-size: 30px;
+  color: #B9F852;
 }
 
 .ourServices {
-    text-align: center;
-    color: #B9F852;
+  text-align: center;
+  color: #B9F852;
 }
-
 
 /* footer */
-
 footer {
-    background-color: #212529;
-    position: relative;
-    bottom: 0px;
-    left: 0px;
-    right: 0px;
-    padding-top: 5rem;
-    height: auto;
-    width: 100%;
-    margin-top: 10rem;
+  background-color: #212529;
+  position: relative;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  padding-top: 1rem;
+  height: auto;
+  width: 100%;
+  margin-top: 10rem;
 }
-
-.infoCreador {
-    color: white;
-    font-size: 0.8rem;
-    text-align: center;
-    padding-bottom: 0.1rem;
+footer section {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  margin-top: 2rem;
 }
-
-.infoGym p {
-    color: white;
-    font-size: 1rem;
-    margin: 0px 0px 1rem 2rem;
+footer section .infoGym {
+  color: white;
+  font-size: 1rem;
+  margin: 0px 0px 1rem 2rem;
 }
-
-.infoFooter {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
-    margin-top: 2rem;
+footer section .socialMedia {
+  text-align: center;
+  margin-left: auto;
+  margin-right: 5rem;
 }
-
-
-/* redes sociales */
-
-.socialMedia p {
-    color: white;
+footer section .socialMedia i {
+  font-size: 1rem;
+  margin: 0.2em 0.5em 1em 0.5em;
+  font-size: 2rem;
 }
-
-i {
-    font-size: 1rem;
-    margin: 0.2em 0.5em 1em 0.5em;
-    font-size: 2rem;
+footer section .socialMedia p {
+  color: white;
 }
-
-.socialMedia {
-    text-align: center;
-    margin-left: auto;
-    margin-right: 5rem;
+footer .infoCreador {
+  text-align: center;
+  padding-bottom: 1rem;
 }
-
-
+footer .infoCreador a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.8rem;
+  text-align: center;
+  padding-bottom: 0.1rem;
+}
 
 /* index */
-
-
-.aboutUs p{
-    margin: 0.5em 2em 0em 2em;
-    color: white;
-    text-align: center;
-    font-size: 1.5em;
-    margin-top: 1rem;
-    margin-bottom: 0px;
+main h1 {
+  color: white;
+  text-align: center;
+  font-size: 6rem;
+  font-family: "Bebas Neue", cursive;
 }
-
-.p_bienvenidos {
-    font-size: 3em !important;
-    margin-top: 2rem !important;
-    color: #B9F852 !important;
+main .aboutUs p {
+  margin: 0.5em 2em 0em 2em;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 1rem;
+  margin-bottom: 0px;
 }
-
+main .aboutUs .p_bienvenidos {
+  font-size: 3em !important;
+  text-align: center;
+  color: #B9F852 !important;
+}
 
 .secciones {
-    font-size: 2em;
-    text-align: center;
-    margin-bottom: 2.5rem;
-    margin-top: 3.5rem;
-    background-color: #B9F852;
-    color: #212121;
-    font-weight: bold;
-    padding: 0.5em;
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  margin-top: 3.5rem;
+  background-color: #B9F852;
+  color: #212121;
+  font-weight: bold;
+  padding: 0.5em;
 }
 
 .servicios {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .serv {
-    padding: 1.5rem;
+  padding: 1.5rem;
 }
 
 .tituloServicio {
-    font-weight: bold;
-    margin-top: 0.5em;
+  font-weight: bold;
+  margin-top: 0.5em;
 }
 
 .pOurServices {
-    font-size: 1.2em;
-    text-align: justify;
-    margin-top: 0.5em;
-    margin-bottom: 3rem;
-    color: white;
+  font-size: 1.2em;
+  text-align: left;
+  margin-top: 0.5em;
+  margin-bottom: 3rem;
+  color: white;
 }
-
 
 .reseñas p {
-    color: white;
-    text-align: justify;
-    font-size: 1.2em;
-    margin: 2rem;
+  color: white;
+  text-align: left;
+  font-size: 1.2em;
+  margin: 2rem;
 }
 
-
 .clientes {
-    height: auto;
-    width: 80%;
-    border-radius: 5%;
-
+  height: auto;
+  width: 80%;
+  border-radius: 5%;
 }
 
 .comentarios {
-    margin-top: 5em;
+  margin-top: 5em;
 }
 
 .reseñas {
-    text-align: center;
+  text-align: center;
 }
 
-
+/* profes */
+.nuestroTeam {
+  margin-top: 7rem;
+}
+.nuestroTeam p {
+  font-size: 1.2em;
+  color: white;
+}
+.nuestroTeam h3 {
+  font-size: 2em;
+  padding-top: 5rem;
+  margin-bottom: 2rem;
+  color: #B9F852;
+}
+.nuestroTeam .divNuestroTeam {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 {
+  display: flex;
+  flex-direction: row;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 .profes {
+  width: auto;
+  height: 25rem;
+  border-radius: 5%;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 .der {
+  text-align: right;
+  margin-right: 1rem;
+  margin-left: 2rem;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq {
+  text-align: left;
+  margin-left: 1rem;
+  margin-right: 2rem;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 .notaEditor {
+  font-size: 1.2em !important;
+  margin-top: 10%;
+}
 
 /* planes */
-
 .nuestrosPlanes {
-    margin-top: 7rem;
+  margin-top: 7rem;
 }
 
-.promo img{
-    width: 80%;
-    height: auto;
-    margin-left: 10%;
-    margin-right: 10%;
+.promo img {
+  width: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .planes {
-    margin-right: 2rem;
-    margin-left: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: space-between
+  margin-right: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 .planes img {
-    width: 25rem;
-    height: auto;
-    padding: 2rem;
+  width: 25rem;
+  height: auto;
+  padding: 2rem;
 }
 
-
-
 /* horarios */
-
-
 .nuestrosHorarios {
-    text-align: center;
-    margin-top: 7rem;
+  text-align: center;
+  margin-top: 7rem;
 }
 
 .nuestrosHorarios img {
-    width: 80%;
-    height: auto;
+  width: 80%;
+  height: auto;
 }
 
 .nuestrosHorarios p {
-    font-size: 18px;
-    color: white;
-    margin-top: 1rem;
+  font-size: 18px;
+  color: white;
+  margin-top: 1rem;
 }
-
-
-/* profes */
-
-.nuestroTeam {
-    margin-top: 7rem;
-}
-
-.nuestroTeam p {
-    font-size: 1.2em;
-    color: white;
-}
-
-
-.nuestroTeam h3 {
-    font-size: 2em;
-    padding-top: 5rem;
-    margin-bottom: 2rem;
-    color: #B9F852;
-}
-
-.profes {
-    width: auto;
-    height: 25rem;
-    border-radius: 5%;
-}
-
-.divNuestroTeam {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: 10%;
-    margin-right: 10%;
-
-}
-
-.divNuestroTeam2 {
-    display: flex;
-    flex-direction: row;
-}
-
-.der {
-    text-align: right;
-    margin-right: 1rem;
-    margin-left: 2rem;
-}
-
-.izq {
-    text-align: left;
-    margin-left: 1rem;
-    margin-right: 2rem;
-}
-
-.notaEditor {
-    font-size: 1.2em !important;
-    margin-top: 10%;
-}
-
 
 /* faqs */
-
-.preguntasFrecuentes div {
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
 .preguntasFrecuentes {
-    margin-top: 7rem;
+  margin-top: 7rem;
 }
-
-.preguntasFrecuentes h3 {
-    font-size: 30px;
+.preguntasFrecuentes .FAQsAccordion {
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
-
-.preguntasFrecuentes p {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 50px;
+.preguntasFrecuentes .FAQsAccordion .accordion-button {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: inherit;
+  border-color: green;
+  color: inherit;
 }
-
+.preguntasFrecuentes .FAQsAccordion .accordion-button:not(.collapsed) {
+  background: #B9F852;
+  color: inherit;
+}
+.preguntasFrecuentes .FAQsAccordion .accordion-body {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 1rem;
+}
 
 /* contacto */
-
-.imgContacto {
-    height: 100%;
-    width: auto;
-}
-
 .contacto {
-    margin-top: 7rem;
+  margin-top: 7rem;
 }
-
-.formularioContacto {
-    width: 35%;
-    height: auto;
-    border-radius: 10px;
-    margin-left: 10%;
-    margin-top: 2rem;
+.contacto .imgFormulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: baseline;
+  text-align: left;
 }
-
-#Enviar {
-    width: 7rem;
-    text-align: center;
-    font-size: 1em;
-    margin-top: 1rem;
+.contacto .imgFormulario .imgMancuerna {
+  width: 40%;
 }
-
-form label {
-    font-size: 1.5rem;
+.contacto .imgFormulario .imgMancuerna img {
+  height: auto;
+  width: 100%;
 }
-
-form ::placeholder{
-    font-size: 1em;
-    text-align: center;
+.contacto .formularioContacto {
+  width: auto;
+  height: auto;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-top: 2rem;
 }
-
-input {
-    width: 25em;
-    height: 2em;
-    border-radius: 5px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: black;
+.contacto .formularioContacto input {
+  width: 30em;
+  height: 3em;
+  padding: 0.2em 1em 0.2em 1em;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
 }
-
-#mensaje {
-    height: 15em;
+.contacto .formularioContacto form {
+  display: flex;
+  flex-direction: column;
 }
-
-.imgFormulario {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: baseline;
-    font-size: 20px;
-    text-align: left;
+.contacto .formularioContacto form label {
+  font-size: 1.3rem;
+  color: white;
+}
+.contacto .formularioContacto form #Enviar {
+  width: 7rem;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 1rem;
+}
+.contacto .formularioContacto form textarea {
+  width: 30em;
+  min-height: 20em;
+  max-height: 20em;
+  padding: 1em 1em 0.2em 1em;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
 }
 
 .pContacto {
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
-    padding: 0px 5em 0px 5em;
-    margin-top: 2em;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
+  padding: 0em 5em 0em 5em;
+  margin-top: 2em;
 }
 
 .pContacto2 {
-    margin-top: 2em;
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
+  margin-top: 2em;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
 }
 
 .pContacto3 {
-    margin-top: 2.5em;
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
+  margin-top: 2.5em;
+  text-align: center;
+  font-size: 1.5em;
+  color: white;
 }
 
 .mapa {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .direccion p {
-    text-align: center;
-    font-size: 1.5em;
+  text-align: center;
+  font-size: 1.5em;
 }
+
+@media (max-width: 992px) {
+  .planes div img {
+    width: 100%;
+    height: auto;
+    padding: 1em;
+    margin-top: 2em;
+  }
+  .nuestroTeam .divNuestroTeam .divNuestroTeam2 {
+    margin-top: 3.5em;
+  }
+  .nuestroTeam .divNuestroTeam .divNuestroTeam2 h3 {
+    padding: 0;
+  }
+  .imgFormulario .imgMancuerna {
+    display: none;
+  }
+  .imgFormulario .formularioContacto {
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .comentarios .row div {
+    width: 50%;
+  }
+  body footer section .infoGym {
+    margin: 0rem 0rem 1rem 1rem;
+    font-size: 0.8rem;
+  }
+  body footer .socialMedia {
+    margin-right: 0rem;
+    font-size: 0.8rem;
+  }
+  .nuestroTeam .divNuestroTeam .divNuestroTeam2 {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nuestroTeam .divNuestroTeam .divNuestroTeam2 h3 {
+    text-align: center;
+    margin: 0px;
+  }
+  .nuestroTeam .divNuestroTeam .divNuestroTeam2 .profes {
+    margin-top: 1rem;
+  }
+  .nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq {
+    margin: 1rem 0rem 0rem 0rem;
+  }
+  .nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq p {
+    text-align: center;
+  }
+  .nuestroTeam .divNuestroTeam .divNuestroTeam2 .der {
+    margin: 1rem 0rem 0rem 0rem;
+  }
+  .nuestroTeam .divNuestroTeam .divNuestroTeam2 .der p {
+    text-align: center;
+  }
+  .preguntasFrecuentes .FAQsAccordion .accordion-item h2 button {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  body .reseñas .comentarios .row div {
+    width: 100%;
+  }
+  body footer section {
+    flex-direction: column;
+    align-items: center;
+  }
+  body footer section .infoGym {
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    font-size: 1rem;
+  }
+  body footer section .socialMedia {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+  body .contacto .imgFormulario .formularioContacto {
+    width: 100%;
+    height: auto;
+  }
+  body .contacto .imgFormulario .formularioContacto form {
+    align-items: center;
+  }
+  body .contacto .imgFormulario .formularioContacto form input {
+    width: 80%;
+    height: auto;
+  }
+  body .contacto .imgFormulario .formularioContacto form textarea {
+    width: 80%;
+    height: auto;
+  }
+  body .contacto .imgFormulario div p {
+    padding: 0em 1em;
+  }
+  body .contacto .mapa {
+    width: 90%;
+    height: auto;
+  }
+}/*# sourceMappingURL=style.css.map */

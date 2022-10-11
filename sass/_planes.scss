@@ -1,0 +1,48 @@
+
+/* planes */
+
+.nuestrosPlanes {
+    margin-top: 7rem;
+}
+
+.promo img{
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.planes {
+    margin-right: 2rem;
+    margin-left: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between
+}
+
+.planes img {
+    width: 25rem;
+    height: auto;
+    padding: 2rem;
+}
+
+
+
+/* horarios */
+
+
+.nuestrosHorarios {
+    text-align: center;
+    margin-top: 7rem;
+}
+
+.nuestrosHorarios img {
+    width: 80%;
+    height: auto;
+}
+
+.nuestrosHorarios p {
+    font-size: 18px;
+    color: white;
+    margin-top: 1rem;
+}

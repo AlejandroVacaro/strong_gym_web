@@ -1,0 +1,57 @@
+/* profes */
+
+.nuestroTeam {
+    margin-top: 7rem;
+    p {
+        font-size: 1.2em;
+        color: white;
+    }
+    
+    h3 {
+        font-size: 2em;
+        padding-top: 5rem;
+        margin-bottom: 2rem;
+        color: #B9F852;
+    }
+    .divNuestroTeam {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 10%;
+        margin-right: 10%;
+        .divNuestroTeam2 {
+            display: flex;
+            flex-direction: row;
+            .profes {
+                width: auto;
+                height: 25rem;
+                border-radius: 5%;
+            }
+            .der {
+                text-align: right;
+                margin-right: 1rem;
+                margin-left: 2rem;
+            }
+            
+            .izq {
+                text-align: left;
+                margin-left: 1rem;
+                margin-right: 2rem;
+            }
+            .notaEditor {
+                font-size: 1.2em !important;
+                margin-top: 10%;
+            }
+            
+        }
+        
+    }
+    
+}
+
+
+
+
+
+
+
+
