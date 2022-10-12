@@ -423,6 +423,7 @@ main .aboutUs .p_bienvenidos {
   }
   .nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq p {
     text-align: center;
+    margin: 0;
   }
   .nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq h3 {
     text-align: center;
@@ -434,6 +435,7 @@ main .aboutUs .p_bienvenidos {
   }
   .nuestroTeam .divNuestroTeam .divNuestroTeam2 .der p {
     text-align: center;
+    margin: 0;
   }
   .nuestroTeam .divNuestroTeam .divNuestroTeam2 .der h3 {
     text-align: center;
