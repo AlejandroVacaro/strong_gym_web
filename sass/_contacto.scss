@@ -1,5 +1,10 @@
 /* contacto */
 
+@mixin tamaño ($ancho, $alto) {
+    width: $ancho;
+    height: $alto;
+}
+
 .contacto {
     margin-top: 7rem;
 
@@ -14,15 +19,13 @@
             width: 40%;
 
             img {
-                height: auto;
-                width: 100%;
+                @include tamaño(100%, auto);
             }
         }
     }
 
     .formularioContacto {
-        width: auto;
-        height: auto;
+        @include tamaño(auto, auto);
         border-radius: 10px;
         margin-left: 10%;
         margin-top: 2rem;
@@ -85,10 +88,7 @@
 }
 
 .pContacto3 {
-    margin-top: 2.5em;
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
+    @extend .pContacto2;
 }
 
 .mapa {

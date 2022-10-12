@@ -307,8 +307,8 @@ main .aboutUs .p_bienvenidos {
   width: 40%;
 }
 .contacto .imgFormulario .imgMancuerna img {
-  height: auto;
   width: 100%;
+  height: auto;
 }
 .contacto .formularioContacto {
   width: auto;
@@ -359,15 +359,8 @@ main .aboutUs .p_bienvenidos {
   margin-top: 2em;
 }
 
-.pContacto2 {
+.pContacto2, .pContacto3 {
   margin-top: 2em;
-  text-align: center;
-  font-size: 1.5em;
-  color: white;
-}
-
-.pContacto3 {
-  margin-top: 2.5em;
   text-align: center;
   font-size: 1.5em;
   color: white;
