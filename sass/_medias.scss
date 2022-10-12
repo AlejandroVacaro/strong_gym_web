@@ -120,6 +120,12 @@
         }
     }
 
+    .mapa {
+        iframe {
+            width: 90%;
+        }
+    }
+
 }
 
 
@@ -267,7 +273,11 @@
 
             .mapa {
                 width: 90%;
-                height: auto;
+                margin: auto;
+                iframe {
+                    width: auto;
+                    height: auto;
+                }
             }
         }
 

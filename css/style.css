@@ -450,6 +450,9 @@ main .aboutUs .p_bienvenidos {
   .preguntasFrecuentes .FAQsAccordion .accordion-item h2 button {
     font-size: 1.2rem;
   }
+  .mapa iframe {
+    width: 90%;
+  }
 }
 @media (max-width: 576px) {
   body main h1 {
@@ -530,6 +533,10 @@ main .aboutUs .p_bienvenidos {
   }
   body .contacto .mapa {
     width: 90%;
+    margin: auto;
+  }
+  body .contacto .mapa iframe {
+    width: auto;
     height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
