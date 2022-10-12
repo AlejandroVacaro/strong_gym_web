@@ -2,56 +2,65 @@
 
 .nuestroTeam {
     margin-top: 7rem;
-    p {
-        font-size: 1.2em;
-        color: white;
-    }
-    
+
     h3 {
         font-size: 2em;
         padding-top: 5rem;
         margin-bottom: 2rem;
         color: #B9F852;
     }
+
     .divNuestroTeam {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         margin-left: 10%;
         margin-right: 10%;
+
         .divNuestroTeam2 {
             display: flex;
             flex-direction: row;
-            .profes {
-                width: auto;
-                height: 25rem;
-                border-radius: 5%;
+            height: 25rem;
+            width: 100%;
+            margin-bottom: 2rem;
+
+            .NuestroTeam-img {
+                height: 100%;
+
+                .profes {
+                    height: 25rem;
+                    width: auto;
+                    border-radius: 5%;
+                }
             }
-            .der {
-                text-align: right;
-                margin-right: 1rem;
-                margin-left: 2rem;
-            }
-            
+
             .izq {
-                text-align: left;
-                margin-left: 1rem;
+                p {
+                    font-size: 1.2em;
+                    color: white;
+                    margin-left: 2rem;
+                }
+
+                h3 {
+                    margin-left: 2rem;
+                }
+
+                .notaEditor {
+                    padding-top: 5rem;
+                    font-size: 0.9em;
+                }
+            }
+
+            .der {
+                p {
+                    font-size: 1.2em;
+                color: white;
                 margin-right: 2rem;
+                }
+                h3 {
+                    margin-right: 2rem;
+                }
             }
-            .notaEditor {
-                font-size: 1.2em !important;
-                margin-top: 10%;
-            }
-            
         }
-        
     }
-    
+
 }
-
-
-
-
-
-
-
-

@@ -17,7 +17,7 @@
                 margin-top: 3.5em;
 
                 h3 {
-                    padding: 0;
+                    padding: 0rem;
                 }
             }
         }
@@ -66,32 +66,42 @@
 
     .nuestroTeam {
         .divNuestroTeam {
+
             .divNuestroTeam2 {
                 flex-direction: column;
                 text-align: center;
-
-                h3 {
-                    text-align: center;
-                    margin: 0px;
-                }
+                height: auto;
+                margin-top: 0px;
 
                 .profes {
                     margin-top: 1rem;
                 }
 
                 .izq {
-                    margin: 1rem 0rem 0rem 0rem;
+                    margin: 0px;
 
                     p {
                         text-align: center;
                     }
+
+                    h3 {
+                        text-align: center;
+                        margin: 2rem 0rem 0rem 0rem;
+                        padding: 0rem;
+                    }
                 }
 
                 .der {
-                    margin: 1rem 0rem 0rem 0rem;
+                    margin: 0px;
 
                     p {
                         text-align: center;
+                    }
+
+                    h3 {
+                        text-align: center;
+                        margin: 2rem 0rem 0rem 0rem;
+                        padding: 0rem;
                     }
                 }
             }
@@ -117,12 +127,90 @@
 
 
     body {
+
+        main {
+            h1 {
+                font-size: 5rem;
+            }
+
+            .aboutUs {
+                font-size: 1.7em;
+
+                .p_bienvenidos {
+                    font-size: 1.7em;
+                    margin: 0.5em 0em 0em 0em;
+                }
+            }
+        }
+
         .reseñas {
             .comentarios {
                 .row {
                     div {
                         width: 100%;
                     }
+                }
+            }
+        }
+
+        .nuestrosPlanes {
+            .promo {
+                img {
+                    width: 90%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }
+            }
+        }
+
+        .planes {
+            div {
+                img {
+                    width: 90%;
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }
+            }
+        }
+
+        .nuestrosHorarios {
+            div {
+                img {
+                    width: 90%;
+                }
+
+                p {
+                    margin-left: 5%;
+                    margin-right: 5%;
+                }
+            }
+        }
+
+        .nuestroTeam {
+            .divNuestroTeam {
+                .divNuestroTeam2 {
+                    .NuestroTeam-img {
+                        .profes {
+                            height: 20rem;
+                            width: auto;
+                        }
+
+                    }
+
+                    .izq {
+                        p {
+                            margin-left: 0px;
+                            margin-top: 1rem;
+                        }
+                    }
+
+                    .der {
+                        p {
+                            margin-right: 0px;
+                            margin-top: 1rem;
+                        }
+                    }
+
                 }
             }
         }

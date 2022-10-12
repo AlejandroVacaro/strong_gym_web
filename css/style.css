@@ -104,7 +104,7 @@ main h1 {
   font-size: 6rem;
   font-family: "Bebas Neue", cursive;
 }
-main .aboutUs p {
+main .aboutUs {
   margin: 0.5em 2em 0em 2em;
   color: white;
   text-align: center;
@@ -113,9 +113,9 @@ main .aboutUs p {
   margin-bottom: 0px;
 }
 main .aboutUs .p_bienvenidos {
-  font-size: 3em !important;
+  font-size: 2em;
   text-align: center;
-  color: #B9F852 !important;
+  color: #B9F852;
 }
 
 .secciones {
@@ -176,10 +176,6 @@ main .aboutUs .p_bienvenidos {
 .nuestroTeam {
   margin-top: 7rem;
 }
-.nuestroTeam p {
-  font-size: 1.2em;
-  color: white;
-}
 .nuestroTeam h3 {
   font-size: 2em;
   padding-top: 5rem;
@@ -188,32 +184,44 @@ main .aboutUs .p_bienvenidos {
 }
 .nuestroTeam .divNuestroTeam {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-left: 10%;
   margin-right: 10%;
 }
 .nuestroTeam .divNuestroTeam .divNuestroTeam2 {
   display: flex;
   flex-direction: row;
-}
-.nuestroTeam .divNuestroTeam .divNuestroTeam2 .profes {
-  width: auto;
   height: 25rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 .NuestroTeam-img {
+  height: 100%;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 .NuestroTeam-img .profes {
+  height: 25rem;
+  width: auto;
   border-radius: 5%;
 }
-.nuestroTeam .divNuestroTeam .divNuestroTeam2 .der {
-  text-align: right;
-  margin-right: 1rem;
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq p {
+  font-size: 1.2em;
+  color: white;
   margin-left: 2rem;
 }
-.nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq {
-  text-align: left;
-  margin-left: 1rem;
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq h3 {
+  margin-left: 2rem;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq .notaEditor {
+  padding-top: 5rem;
+  font-size: 0.9em;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 .der p {
+  font-size: 1.2em;
+  color: white;
   margin-right: 2rem;
 }
-.nuestroTeam .divNuestroTeam .divNuestroTeam2 .notaEditor {
-  font-size: 1.2em !important;
-  margin-top: 10%;
+.nuestroTeam .divNuestroTeam .divNuestroTeam2 .der h3 {
+  margin-right: 2rem;
 }
 
 /* planes */
@@ -387,7 +395,7 @@ main .aboutUs .p_bienvenidos {
     margin-top: 3.5em;
   }
   .nuestroTeam .divNuestroTeam .divNuestroTeam2 h3 {
-    padding: 0;
+    padding: 0rem;
   }
   .imgFormulario .imgMancuerna {
     display: none;
@@ -411,33 +419,80 @@ main .aboutUs .p_bienvenidos {
   .nuestroTeam .divNuestroTeam .divNuestroTeam2 {
     flex-direction: column;
     text-align: center;
-  }
-  .nuestroTeam .divNuestroTeam .divNuestroTeam2 h3 {
-    text-align: center;
-    margin: 0px;
+    height: auto;
+    margin-top: 0px;
   }
   .nuestroTeam .divNuestroTeam .divNuestroTeam2 .profes {
     margin-top: 1rem;
   }
   .nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq {
-    margin: 1rem 0rem 0rem 0rem;
+    margin: 0px;
   }
   .nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq p {
     text-align: center;
   }
+  .nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq h3 {
+    text-align: center;
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 0rem;
+  }
   .nuestroTeam .divNuestroTeam .divNuestroTeam2 .der {
-    margin: 1rem 0rem 0rem 0rem;
+    margin: 0px;
   }
   .nuestroTeam .divNuestroTeam .divNuestroTeam2 .der p {
     text-align: center;
+  }
+  .nuestroTeam .divNuestroTeam .divNuestroTeam2 .der h3 {
+    text-align: center;
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 0rem;
   }
   .preguntasFrecuentes .FAQsAccordion .accordion-item h2 button {
     font-size: 1.2rem;
   }
 }
 @media (max-width: 576px) {
+  body main h1 {
+    font-size: 5rem;
+  }
+  body main .aboutUs {
+    font-size: 1.7em;
+  }
+  body main .aboutUs .p_bienvenidos {
+    font-size: 1.7em;
+    margin: 0.5em 0em 0em 0em;
+  }
   body .reseñas .comentarios .row div {
     width: 100%;
+  }
+  body .nuestrosPlanes .promo img {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  body .planes div img {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  body .nuestrosHorarios div img {
+    width: 90%;
+  }
+  body .nuestrosHorarios div p {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  body .nuestroTeam .divNuestroTeam .divNuestroTeam2 .NuestroTeam-img .profes {
+    height: 20rem;
+    width: auto;
+  }
+  body .nuestroTeam .divNuestroTeam .divNuestroTeam2 .izq p {
+    margin-left: 0px;
+    margin-top: 1rem;
+  }
+  body .nuestroTeam .divNuestroTeam .divNuestroTeam2 .der p {
+    margin-right: 0px;
+    margin-top: 1rem;
   }
   body footer section {
     flex-direction: column;
