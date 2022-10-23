@@ -1,290 +1,303 @@
-@media (max-width: 992px) {
-
-    .planes {
-        div {
-            img {
-                width: 100%;
-                height: auto;
-                padding: 1em;
-                margin-top: 2em;
-            }
-        }
-    }
-
-    .nuestroTeam {
-        .divNuestroTeam {
-            .divNuestroTeam2 {
-                margin-top: 3.5em;
-
-                h3 {
-                    padding: 0rem;
-                }
-            }
-        }
-    }
-
-    .imgFormulario {
-        .imgMancuerna {
-            display: none;
-        }
-
-        .formularioContacto {
-            margin-left: 0;
-        }
-
-    }
 
 
-}
 
 
-@media (max-width: 768px) {
-
-    .comentarios {
-        .row {
-            div {
-                width: 50%;
-            }
-        }
-    }
-
-    body {
-        footer {
-            section {
-                .infoGym {
-                    margin: 0rem 0rem 1rem 1rem;
-                    font-size: 0.8rem;
-                }
-            }
-
-            .socialMedia {
-                margin-right: 0rem;
-                font-size: 0.8rem;
-            }
-        }
-    }
-
-    .nuestroTeam {
-        .divNuestroTeam {
-
-            .divNuestroTeam2 {
-                flex-direction: column;
-                text-align: center;
-                height: auto;
-                margin-top: 0px;
-
-                .profes {
-                    margin-top: 1rem;
-                }
-
-                .izq {
-                    margin: 0px;
-
-                    p {
-                        text-align: center;
-                        margin: 0;
-                    }
-
-                    h3 {
-                        text-align: center;
-                        margin: 2rem 0rem 0rem 0rem;
-                        padding: 0rem;
-                    }
-                }
-
-                .der {
-                    margin: 0px;
-
-                    p {
-                        text-align: center;
-                        margin: 0;
-                    }
-
-                    h3 {
-                        text-align: center;
-                        margin: 2rem 0rem 0rem 0rem;
-                        padding: 0rem;
-                    }
-                }
-            }
-        }
-    }
-
-    .preguntasFrecuentes {
-        .FAQsAccordion {
-            .accordion-item {
-                h2 {
-                    button {
-                        font-size: 1.2rem;
-                    }
-                }
-            }
-        }
-    }
-
-    .mapa {
-        iframe {
-            width: 90%;
-        }
-    }
-
-}
 
 
-@media (max-width: 576px) {
 
 
-    body {
-
-        main {
-            h1 {
-                font-size: 5rem;
-            }
-
-            .aboutUs {
-                font-size: 1.7em;
-
-                .p_bienvenidos {
-                    font-size: 1.7em;
-                    margin: 0.5em 0em 0em 0em;
-                }
-            }
-        }
-
-        .reseñas {
-            .comentarios {
-                .row {
-                    div {
-                        width: 100%;
-                    }
-                }
-            }
-        }
-
-        .nuestrosPlanes {
-            .promo {
-                img {
-                    width: 90%;
-                    margin-left: 5%;
-                    margin-right: 5%;
-                }
-            }
-        }
-
-        .planes {
-            div {
-                img {
-                    width: 90%;
-                    margin-left: 5%;
-                    margin-right: 5%;
-                }
-            }
-        }
-
-        .nuestrosHorarios {
-            div {
-                img {
-                    width: 90%;
-                }
-
-                p {
-                    margin-left: 5%;
-                    margin-right: 5%;
-                }
-            }
-        }
-
-        .nuestroTeam {
-            .divNuestroTeam {
-                .divNuestroTeam2 {
-                    .NuestroTeam-img {
-                        .profes {
-                            height: 20rem;
-                            width: auto;
-                        }
-
-                    }
-
-                    .izq {
-                        p {
-                            margin-left: 0px;
-                            margin-top: 1rem;
-                        }
-                    }
-
-                    .der {
-                        p {
-                            margin-right: 0px;
-                            margin-top: 1rem;
-                        }
-                    }
-
-                }
-            }
-        }
-
-        footer {
-            section {
-                flex-direction: column;
-                align-items: center;
-
-                .infoGym {
-                    text-align: center;
-                    align-items: center;
-                    margin: 0;
-                    font-size: 1rem;
-                }
-
-                .socialMedia {
-                    margin: 0;
-                    text-align: center;
-                    align-items: center;
-                    font-size: 1rem;
-                }
-            }
-        }
-
-        .contacto {
-            .imgFormulario {
-                .formularioContacto {
-                    width: 100%;
-                    height: auto;
-
-                    form {
-                        align-items: center;
-
-                        input {
-                            width: 80%;
-                            height: auto;
-                        }
-
-                        textarea {
-                            width: 80%;
-                            height: auto;
-                        }
-                    }
-                }
-
-                div {
-
-                    p {
-                        padding: 0em 1em;
-                    }
-                }
-            }
-
-            .mapa {
-                width: 90%;
-                margin: auto;
-                iframe {
-                    width: auto;
-                    height: auto;
-                }
-            }
-        }
 
 
-    }
 
 
-}
+// @media (max-width: 992px) {
+
+//     .planes {
+//         div {
+//             img {
+//                 width: 100%;
+//                 height: auto;
+//                 padding: 1em;
+//                 margin-top: 2em;
+//             }
+//         }
+//     }
+
+//     .nuestroTeam {
+//         .divNuestroTeam {
+//             .divNuestroTeam2 {
+//                 margin-top: 3.5em;
+
+//                 h3 {
+//                     padding: 0rem;
+//                 }
+//             }
+//         }
+//     }
+
+//     .imgFormulario {
+//         .imgMancuerna {
+//             display: none;
+//         }
+
+//         .formularioContacto {
+//             margin-left: 0;
+//         }
+
+//     }
+
+
+// }
+
+
+// @media (max-width: 768px) {
+
+//     .comentarios {
+//         .row {
+//             div {
+//                 width: 50%;
+//             }
+//         }
+//     }
+
+//     body {
+//         footer {
+//             section {
+//                 .infoGym {
+//                     margin: 0rem 0rem 1rem 1rem;
+//                     font-size: 0.8rem;
+//                 }
+//             }
+
+//             .socialMedia {
+//                 margin-right: 0rem;
+//                 font-size: 0.8rem;
+//             }
+//         }
+//     }
+
+//     .nuestroTeam {
+//         .divNuestroTeam {
+
+//             .divNuestroTeam2 {
+//                 flex-direction: column;
+//                 text-align: center;
+//                 height: auto;
+//                 margin-top: 0px;
+
+//                 .profes {
+//                     margin-top: 1rem;
+//                 }
+
+//                 .izq {
+//                     margin: 0px;
+
+//                     p {
+//                         text-align: center;
+//                         margin: 0;
+//                     }
+
+//                     h3 {
+//                         text-align: center;
+//                         margin: 2rem 0rem 0rem 0rem;
+//                         padding: 0rem;
+//                     }
+//                 }
+
+//                 .der {
+//                     margin: 0px;
+
+//                     p {
+//                         text-align: center;
+//                         margin: 0;
+//                     }
+
+//                     h3 {
+//                         text-align: center;
+//                         margin: 2rem 0rem 0rem 0rem;
+//                         padding: 0rem;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     .preguntasFrecuentes {
+//         .FAQsAccordion {
+//             .accordion-item {
+//                 h2 {
+//                     button {
+//                         font-size: 1.2rem;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+//     .mapa {
+//         iframe {
+//             width: 90%;
+//         }
+//     }
+
+// }
+
+
+// @media (max-width: 576px) {
+
+
+//     body {
+
+//         main {
+//             h1 {
+//                 font-size: 5rem;
+//             }
+
+//             .aboutUs {
+//                 font-size: 1.7em;
+
+//                 .p_bienvenidos {
+//                     font-size: 1.7em;
+//                     margin: 0.5em 0em 0em 0em;
+//                 }
+//             }
+//         }
+
+//         .reseñas {
+//             .comentarios {
+//                 .row {
+//                     div {
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//         }
+
+//         .nuestrosPlanes {
+//             .promo {
+//                 img {
+//                     width: 90%;
+//                     margin-left: 5%;
+//                     margin-right: 5%;
+//                 }
+//             }
+//         }
+
+//         .planes {
+//             div {
+//                 img {
+//                     width: 90%;
+//                     margin-left: 5%;
+//                     margin-right: 5%;
+//                 }
+//             }
+//         }
+
+//         .nuestrosHorarios {
+//             div {
+//                 img {
+//                     width: 90%;
+//                 }
+
+//                 p {
+//                     margin-left: 5%;
+//                     margin-right: 5%;
+//                 }
+//             }
+//         }
+
+//         .nuestroTeam {
+//             .divNuestroTeam {
+//                 .divNuestroTeam2 {
+//                     .NuestroTeam-img {
+//                         .profes {
+//                             height: 20rem;
+//                             width: auto;
+//                         }
+
+//                     }
+
+//                     .izq {
+//                         p {
+//                             margin-left: 0px;
+//                             margin-top: 1rem;
+//                         }
+//                     }
+
+//                     .der {
+//                         p {
+//                             flex-direction: column-reverse;
+//                             margin-right: 0px;
+//                             margin-top: 1rem;
+//                         }
+//                     }
+
+//                 }
+//             }
+//         }
+
+//         footer {
+//             section {
+//                 flex-direction: column;
+//                 align-items: center;
+
+//                 .infoGym {
+//                     text-align: center;
+//                     align-items: center;
+//                     margin: 0;
+//                     font-size: 1rem;
+//                 }
+
+//                 .socialMedia {
+//                     margin: 0;
+//                     text-align: center;
+//                     align-items: center;
+//                     font-size: 1rem;
+//                 }
+//             }
+//         }
+
+//         .contacto {
+//             .imgFormulario {
+//                 .formularioContacto {
+//                     width: 100%;
+//                     height: auto;
+
+//                     form {
+//                         align-items: center;
+
+//                         input {
+//                             width: 80%;
+//                             height: auto;
+//                         }
+
+//                         textarea {
+//                             width: 80%;
+//                             height: auto;
+//                         }
+//                     }
+//                 }
+
+//                 div {
+
+//                     p {
+//                         padding: 0em 1em;
+//                     }
+//                 }
+//             }
+
+//             .mapa {
+//                 width: 90%;
+//                 margin: auto;
+//                 iframe {
+//                     width: auto;
+//                     height: auto;
+//                 }
+//             }
+//         }
+
+
+//     }
+
+
+// }

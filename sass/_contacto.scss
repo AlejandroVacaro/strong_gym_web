@@ -1,103 +1,111 @@
-/* contacto */
-
-@mixin tamaño ($ancho, $alto) {
-    width: $ancho;
-    height: $alto;
-}
-
-.contacto {
-    margin-top: 7rem;
-
-    .imgFormulario {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: baseline;
-        text-align: left;
-
-        .imgMancuerna {
-            width: 40%;
-
-            img {
-                @include tamaño(100%, auto);
-            }
-        }
-    }
-
-    .formularioContacto {
-        @include tamaño(auto, auto);
-        border-radius: 10px;
-        margin-left: 10%;
-        margin-top: 2rem;
-
-        input {
-            width: 30em;
-            height: 3em;
-            padding: 0.2em 1em 0.2em 1em;
-            border-radius: 5px;
-            border-style: solid;
-            border-width: 1px;
-            border-color: black;
-        }
-
-        form {
-            display: flex;
-            flex-direction: column;
-
-            label {
-                font-size: 1.3rem;
-                color: white;
-
-            }
-
-            #Enviar {
-                width: 7rem;
-                text-align: center;
-                font-size: 1em;
-                margin-top: 1rem;
-            }
-
-            textarea {
-                width: 30em;
-                min-height: 20em;
-                max-height: 20em;
-                padding: 1em 1em 0.2em 1em;
-                border-radius: 5px;
-                border-style: solid;
-                border-width: 1px;
-                border-color: black;
-            }
-        }
-    }
-}
 
 
-.pContacto {
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
-    padding: 0em 5em 0em 5em;
-    margin-top: 2em;
-}
 
-.pContacto2 {
-    margin-top: 2em;
-    text-align: center;
-    font-size: 1.5em;
-    color: white;
-}
 
-.pContacto3 {
-    @extend .pContacto2;
-}
 
-.mapa {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
-}
 
-.direccion p {
-    text-align: center;
-    font-size: 1.5em;
-}
+
+
+// /* contacto */
+
+// @mixin tamaño ($ancho, $alto) {
+//     width: $ancho;
+//     height: $alto;
+// }
+
+// .contacto {
+//     margin-top: 7rem;
+
+//     .imgFormulario {
+//         display: flex;
+//         flex-wrap: wrap;
+//         justify-content: center;
+//         align-content: baseline;
+//         text-align: left;
+
+//         .imgMancuerna {
+//             width: 40%;
+
+//             img {
+//                 @include tamaño(100%, auto);
+//             }
+//         }
+//     }
+
+//     .formularioContacto {
+//         @include tamaño(auto, auto);
+//         border-radius: 10px;
+//         margin-left: 10%;
+//         margin-top: 2rem;
+
+//         input {
+//             width: 30em;
+//             height: 3em;
+//             padding: 0.2em 1em 0.2em 1em;
+//             border-radius: 5px;
+//             border-style: solid;
+//             border-width: 1px;
+//             border-color: black;
+//         }
+
+//         form {
+//             display: flex;
+//             flex-direction: column;
+
+//             label {
+//                 font-size: 1.3rem;
+//                 color: white;
+
+//             }
+
+//             #Enviar {
+//                 width: 7rem;
+//                 text-align: center;
+//                 font-size: 1em;
+//                 margin-top: 1rem;
+//             }
+
+//             textarea {
+//                 width: 30em;
+//                 min-height: 20em;
+//                 max-height: 20em;
+//                 padding: 1em 1em 0.2em 1em;
+//                 border-radius: 5px;
+//                 border-style: solid;
+//                 border-width: 1px;
+//                 border-color: black;
+//             }
+//         }
+//     }
+// }
+
+
+// .pContacto {
+//     text-align: center;
+//     font-size: 1.5em;
+//     color: white;
+//     padding: 0em 5em 0em 5em;
+//     margin-top: 2em;
+// }
+
+// .pContacto2 {
+//     margin-top: 2em;
+//     text-align: center;
+//     font-size: 1.5em;
+//     color: white;
+// }
+
+// .pContacto3 {
+//     @extend .pContacto2;
+// }
+
+// .mapa {
+//     display: flex;
+//     justify-content: center;
+//     margin-top: 2rem;
+// }
+
+// .direccion p {
+//     text-align: center;
+//     font-size: 1.5em;
+// }
