@@ -25,12 +25,6 @@ header #logo {
   width: auto;
   height: 3rem;
 }
-header .navbar-margin {
-  margin-right: 1.5rem;
-}
-header .navbar-margin li {
-  margin-right: 1rem;
-}
 header .navbar-margin li a {
   text-align: center;
 }
@@ -69,21 +63,25 @@ footer section {
   margin: 2rem 0.5rem 0rem 0.5rem;
 }
 footer section .infoGym {
-  color: white;
-  font-size: 1rem;
-  margin-bottom: 1rem;
   text-align: center;
+  margin-bottom: 2rem;
+}
+footer section .infoGym p {
+  margin-bottom: 0.2rem;
+  color: white;
+  font-size: 0.8rem;
 }
 footer section .socialMedia {
   text-align: center;
 }
 footer section .socialMedia i {
-  font-size: 1rem;
-  margin: 0.2em 0.5em 1em 0.5em;
-  font-size: 2rem;
+  margin: 0rem 0.5rem 2rem 0.5rem;
+  font-size: 1.5rem;
 }
 footer section .socialMedia p {
   color: white;
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
 }
 footer .infoCreador {
   text-align: center;
@@ -108,7 +106,7 @@ main .aboutUs {
   margin: 1rem 1rem 0rem 1rem;
   color: white;
   text-align: center;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-top: 1rem;
   margin-bottom: 0px;
 }
@@ -119,7 +117,7 @@ main .aboutUs .p_bienvenidos {
 }
 
 .secciones {
-  font-size: 2rem;
+  font-size: 1.7rem;
   text-align: center;
   margin-bottom: 2.5rem;
   margin-top: 3.5rem;
@@ -144,8 +142,8 @@ main .aboutUs .p_bienvenidos {
 }
 
 .pOurServices {
-  font-size: 1.2em;
-  text-align: left;
+  font-size: 1rem;
+  text-align: center;
   margin-top: 0.5em;
   margin-bottom: 3rem;
   color: white;
@@ -153,8 +151,8 @@ main .aboutUs .p_bienvenidos {
 
 .reseñas p {
   color: white;
-  text-align: left;
-  font-size: 1.2em;
+  text-align: center;
+  font-size: 1rem;
   margin: 2rem;
 }
 
@@ -172,16 +170,104 @@ main .aboutUs .p_bienvenidos {
   text-align: center;
 }
 
+/* profes */
+.nuestroTeam {
+  margin-top: 7rem;
+}
+.nuestroTeam .divNuestroTeam {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeamIzq, .nuestroTeam .divNuestroTeam .divNuestroTeamDer {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeamIzq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #B9F852;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeamIzq .nuestroTeam-img .profes, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .nuestroTeam-img .profes {
+  height: auto;
+  width: 95%;
+  border-radius: 5%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeamIzq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer p {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+/* planes */
+.nuestrosPlanes {
+  margin-top: 7rem;
+}
+.nuestrosPlanes .promo {
+  text-align: center;
+}
+.nuestrosPlanes .promo img {
+  width: 95%;
+  height: auto;
+}
+.nuestrosPlanes .planes {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  width: 100%;
+  margin: 0%;
+}
+.nuestrosPlanes .planes div {
+  padding: 0;
+  text-align: center;
+}
+.nuestrosPlanes .planes div img {
+  width: 92%;
+  height: auto;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  margin-top: 2rem;
+}
+
+/* horarios */
+.nuestrosHorarios {
+  text-align: center;
+  margin-top: 7rem;
+}
+
+.nuestrosHorarios img {
+  width: 80%;
+  height: auto;
+}
+
+.nuestrosHorarios p {
+  font-size: 18px;
+  color: white;
+  margin-top: 1rem;
+}
+
+.nuestrosHorarios div img {
+  width: 95%;
+}
+.nuestrosHorarios div p {
+  font-size: 1rem;
+}
+
 /* faqs */
 .preguntasFrecuentes {
   margin-top: 7rem;
 }
 .preguntasFrecuentes .FAQsAccordion {
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
 }
 .preguntasFrecuentes .FAQsAccordion .accordion-button {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
   background: inherit;
   border-color: green;
@@ -192,7 +278,88 @@ main .aboutUs .p_bienvenidos {
   color: inherit;
 }
 .preguntasFrecuentes .FAQsAccordion .accordion-body {
-  font-size: 1.2em;
+  font-size: 1rem;
   font-weight: bold;
   margin-top: 1rem;
+}
+
+/* contacto */
+.contacto {
+  margin-top: 7rem;
+}
+.contacto .imgFormulario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: baseline;
+  text-align: left;
+}
+.contacto .imgFormulario .imgMancuerna {
+  display: none;
+}
+.contacto .formularioContacto {
+  border-radius: 10px;
+  width: 95%;
+  height: auto;
+}
+.contacto .formularioContacto input {
+  padding: 0.2em 1em 0.2em 1em;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+.contacto .formularioContacto form {
+  display: flex;
+  flex-direction: column;
+}
+.contacto .formularioContacto form label {
+  font-size: 1rem;
+  color: white;
+}
+.contacto .formularioContacto form #Enviar {
+  width: 7rem;
+  text-align: center;
+  font-size: 1em;
+  margin-top: 1rem;
+}
+.contacto .formularioContacto form textarea {
+  width: 100%;
+  min-height: 20em;
+  max-height: 20em;
+  padding: 1em 1em 0.2em 1em;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+}
+.contacto .formularioContacto .enviar {
+  align-items: center;
+}
+
+.pContacto, .pContacto3, .pContacto2 {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+  margin-top: 3rem;
+}
+
+.pContacto2 {
+  margin-top: 1rem;
+}
+
+.pContacto3 {
+  color: #B9F852;
+  font-size: 1.7rem;
+}
+
+.mapa {
+  width: 95%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+  height: auto;
+}
+.mapa iframe {
+  width: 100%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */

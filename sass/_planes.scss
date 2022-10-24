@@ -1,56 +1,53 @@
+/* planes */
+
+.nuestrosPlanes {
+    margin-top: 7rem;
+
+    .promo {
+        text-align: center;
+        img {
+            width: 95%;
+            height: auto;
+        }
+    }
+
+    .planes {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        width: 100%;
+        margin: 0%;
+
+        div {
+            padding: 0;
+            text-align: center;
+            img {
+            width: 92%;
+            height: auto;
+            margin-left: 2.5%;
+            margin-right: 2.5%;
+            margin-top: 2rem;
+            }
+        }
+    }
+}
 
 
+/* horarios */
 
 
+.nuestrosHorarios {
+    text-align: center;
+    margin-top: 7rem;
+}
 
+.nuestrosHorarios img {
+    width: 80%;
+    height: auto;
+}
 
-
-
-
-// /* planes */
-
-// .nuestrosPlanes {
-//     margin-top: 7rem;
-// }
-
-// .promo img{
-//     width: 80%;
-//     height: auto;
-//     margin-left: 10%;
-//     margin-right: 10%;
-// }
-
-// .planes {
-//     margin-right: 2rem;
-//     margin-left: 2rem;
-//     display: flex;
-//     flex-wrap: wrap;
-//     align-content: space-between
-// }
-
-// .planes img {
-//     width: 25rem;
-//     height: auto;
-//     padding: 2rem;
-// }
-
-
-
-// /* horarios */
-
-
-// .nuestrosHorarios {
-//     text-align: center;
-//     margin-top: 7rem;
-// }
-
-// .nuestrosHorarios img {
-//     width: 80%;
-//     height: auto;
-// }
-
-// .nuestrosHorarios p {
-//     font-size: 18px;
-//     color: white;
-//     margin-top: 1rem;
-// }
+.nuestrosHorarios p {
+    font-size: 18px;
+    color: white;
+    margin-top: 1rem;
+}

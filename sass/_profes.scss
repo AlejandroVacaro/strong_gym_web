@@ -1,18 +1,59 @@
+/* profes */
+
+.nuestroTeam {
+    margin-top: 7rem;
+
+    .divNuestroTeam {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+
+        .divNuestroTeamIzq {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 2rem;
+
+            h2 {
+                font-size: 2em;
+                text-align: center;
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+                color: #B9F852;
+            }
+
+            .nuestroTeam-img {
+                .profes {
+                    height: auto;
+                    width: 95%;
+                    border-radius: 5%;
+                    margin-left: 2.5%;
+                    margin-right: 2.5%;
+                }
+            }
+
+            p {
+                text-align: center;
+                font-size: 1rem;
+                color: white;
+            }
+        }
+
+        .divNuestroTeamDer {
+            @extend .divNuestroTeamIzq;
+        }
+    }
+}
 
 
 
 
-
-
-
-
-
-// /* profes */
 
 // .nuestroTeam {
 //     margin-top: 7rem;
+// }
 
-//     h3 {
+//     h2 {
 //         font-size: 2em;
 //         padding-top: 5rem;
 //         margin-bottom: 2rem;
@@ -32,7 +73,7 @@
 //             width: 100%;
 //             margin-bottom: 2rem;
 
-//             .NuestroTeam-img {
+//             .nuestroTeam-img {
 //                 height: 100%;
 
 //                 .profes {
@@ -49,7 +90,7 @@
 //                     margin-left: 2rem;
 //                 }
 
-//                 h3 {
+//                 h2 {
 //                     margin-left: 2rem;
 //                 }
 
@@ -65,11 +106,9 @@
 //                 color: white;
 //                 margin-right: 2rem;
 //                 }
-//                 h3 {
+//                 h2 {
 //                     margin-right: 2rem;
 //                 }
 //             }
 //         }
 //     }
-
-// }
