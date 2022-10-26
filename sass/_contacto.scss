@@ -24,6 +24,9 @@
         border-radius: 10px;
         width: 95%;
         height: auto;
+        @include tablet {
+                max-width: 600px;
+        }
 
         input {
             padding: 0.2em 1em 0.2em 1em;
@@ -31,6 +34,9 @@
             border-style: solid;
             border-width: 1px;
             border-color: black;
+            @include big-mobile {
+                    font-size: 1.5rem;
+            }
         }
 
         form {
@@ -40,6 +46,9 @@
             label {
                 font-size: 1rem;
                 color: white;
+                @include big-mobile {
+                    font-size: 1.5rem;
+                }
 
             }
 
@@ -48,6 +57,9 @@
                 text-align: center;
                 font-size: 1em;
                 margin-top: 1rem;
+                @include big-mobile {
+                    font-size: 1.5em;
+                }
             }
 
             textarea {
@@ -59,6 +71,9 @@
                 border-style: solid;
                 border-width: 1px;
                 border-color: black;
+                @include big-mobile {
+                    font-size: 1.5rem;
+                }
             }
         }
 
@@ -74,6 +89,13 @@
     font-size: 1rem;
     color: white;
     margin-top: 3rem;
+    @include big-mobile {
+        font-size: 1.5rem
+    }
+    @include small-desktop {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
 }
 
 .pContacto2 {
@@ -94,6 +116,18 @@
     height: auto;
     iframe {
         width: 100%;
-        height: auto;
+        height: 200px;
+        @include big-mobile {
+            width: 80%;
+            height: 300px;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        @include tablet {
+                width: 70%;
+                height: 500px;
+                margin-left: 15%;
+                margin-right: 15%;
+        }
     }
 }

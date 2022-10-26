@@ -79,35 +79,48 @@ footer {
                 margin-bottom: 0.2rem;
                 color: white;
                 font-size: 0.8rem;
-            }
-        }
 
-        .socialMedia {
-            text-align: center;
-
-            i {
-                margin: 0rem 0.5rem 2rem 0.5rem;
-                font-size: 1.5rem;
-            }
-
-            p {
-                color: white;
-                font-size: 0.8rem;
-                margin-bottom: 0.3rem;
+                @include big-mobile {
+                    font-size: 1.2rem;
+                }
             }
         }
     }
 
-    .infoCreador {
+    .socialMedia {
         text-align: center;
-        padding-bottom: 1rem;
 
-        a {
-            text-decoration: none;
+        i {
+            margin: 0rem 0.5rem 2rem 0.5rem;
+            font-size: 1.5rem;
+            @include big-mobile {
+                font-size: 2rem;
+            }
+        }
+
+        p {
             color: white;
             font-size: 0.8rem;
-            text-align: center;
+            margin-bottom: 0.3rem;
+            @include big-mobile {
+                font-size: 1.2rem;
+            }
         }
     }
-
 }
+
+.infoCreador {
+    text-align: center;
+    padding-bottom: 1rem;
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 0.8rem;
+        text-align: center;
+        @include big-mobile {
+        font-size: 0.9rem;
+        }
+    }
+}
+

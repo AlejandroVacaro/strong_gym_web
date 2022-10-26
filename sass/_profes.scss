@@ -8,11 +8,23 @@
         flex-direction: column;
         margin-left: 2.5%;
         margin-right: 2.5%;
+        @include big-mobile {
+                margin-left: 20%;
+                margin-right: 20%;
+        }
+        @include small-desktop {
+            margin-left: 5%;
+            margin-right: 5%;
+        }
 
         .divNuestroTeamIzq {
             display: flex;
             flex-direction: column;
             margin-bottom: 2rem;
+            @include small-desktop {
+                flex-direction: row;
+                margin-top: 2rem;
+            }
 
             h2 {
                 font-size: 2em;
@@ -20,6 +32,14 @@
                 margin-top: 1rem;
                 margin-bottom: 1rem;
                 color: #B9F852;
+                @include big-mobile {
+                    font-size: 2.5rem;
+                }
+                @include small-desktop {
+                        font-size: 2rem;
+                        text-align: left;
+                        padding-left: 5%;
+                }
             }
 
             .nuestroTeam-img {
@@ -29,6 +49,7 @@
                     border-radius: 5%;
                     margin-left: 2.5%;
                     margin-right: 2.5%;
+                    
                 }
             }
 
@@ -36,79 +57,24 @@
                 text-align: center;
                 font-size: 1rem;
                 color: white;
+                @include big-mobile {
+                    font-size: 1.5rem;
+                }
+                @include small-desktop {
+                        font-size: 1.4rem;
+                        text-align: left;
+                        padding-left: 5%
+                }
             }
         }
 
         .divNuestroTeamDer {
             @extend .divNuestroTeamIzq;
+            @include small-desktop {
+                flex-direction: row-reverse;
+            }
         }
     }
 }
 
 
-
-
-
-// .nuestroTeam {
-//     margin-top: 7rem;
-// }
-
-//     h2 {
-//         font-size: 2em;
-//         padding-top: 5rem;
-//         margin-bottom: 2rem;
-//         color: #B9F852;
-//     }
-
-//     .divNuestroTeam {
-//         display: flex;
-//         flex-direction: column;
-//         margin-left: 10%;
-//         margin-right: 10%;
-
-//         .divNuestroTeam2 {
-//             display: flex;
-//             flex-direction: row;
-//             height: 25rem;
-//             width: 100%;
-//             margin-bottom: 2rem;
-
-//             .nuestroTeam-img {
-//                 height: 100%;
-
-//                 .profes {
-//                     height: 25rem;
-//                     width: auto;
-//                     border-radius: 5%;
-//                 }
-//             }
-
-//             .izq {
-//                 p {
-//                     font-size: 1.2em;
-//                     color: white;
-//                     margin-left: 2rem;
-//                 }
-
-//                 h2 {
-//                     margin-left: 2rem;
-//                 }
-
-//                 .notaEditor {
-//                     padding-top: 5rem;
-//                     font-size: 0.9em;
-//                 }
-//             }
-
-//             .der {
-//                 p {
-//                     font-size: 1.2em;
-//                 color: white;
-//                 margin-right: 2rem;
-//                 }
-//                 h2 {
-//                     margin-right: 2rem;
-//                 }
-//             }
-//         }
-//     }

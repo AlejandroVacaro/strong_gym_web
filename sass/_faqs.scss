@@ -11,6 +11,9 @@
             background: inherit;
             border-color: green;
             color: inherit;  
+            @include big-mobile {
+                font-size: 1.5rem;
+            }
         }
         .accordion-button:not(.collapsed) {
             background: #B9F852;
@@ -20,6 +23,9 @@
             font-size: 1rem;
             font-weight: bold;
             margin-top: 1rem;
+            @include big-mobile {
+                font-size: 1.5rem;
+            }
         }
     }    
 }

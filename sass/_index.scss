@@ -38,6 +38,9 @@ main {
     color: #212121;
     font-weight: bold;
     padding: 0.5em;
+    @include small-desktop {
+            font-size: 2rem;
+    }
 }
 
 .servicios {
@@ -52,6 +55,10 @@ main {
 .tituloServicio {
     font-weight: bold;
     margin-top: 0.5em;
+    @include big-mobile {
+        margin-top: 1rem;
+        font-size: 1.7rem;
+    }
 }
 
 .pOurServices {
@@ -60,6 +67,9 @@ main {
     margin-top: 0.5em;
     margin-bottom: 3rem;
     color: white;
+    @include big-mobile {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -68,7 +78,11 @@ main {
     text-align: center;
     font-size: 1rem;
     margin: 2rem;
+    @include big-mobile {
+        font-size: 1.5rem;
+    }
 }
+
 
 
 .clientes {

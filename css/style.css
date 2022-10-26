@@ -71,27 +71,48 @@ footer section .infoGym p {
   color: white;
   font-size: 0.8rem;
 }
-footer section .socialMedia {
+@media (min-width: 576px) {
+  footer section .infoGym p {
+    font-size: 1.2rem;
+  }
+}
+footer .socialMedia {
   text-align: center;
 }
-footer section .socialMedia i {
+footer .socialMedia i {
   margin: 0rem 0.5rem 2rem 0.5rem;
   font-size: 1.5rem;
 }
-footer section .socialMedia p {
+@media (min-width: 576px) {
+  footer .socialMedia i {
+    font-size: 2rem;
+  }
+}
+footer .socialMedia p {
   color: white;
   font-size: 0.8rem;
   margin-bottom: 0.3rem;
 }
-footer .infoCreador {
+@media (min-width: 576px) {
+  footer .socialMedia p {
+    font-size: 1.2rem;
+  }
+}
+
+.infoCreador {
   text-align: center;
   padding-bottom: 1rem;
 }
-footer .infoCreador a {
+.infoCreador a {
   text-decoration: none;
   color: white;
   font-size: 0.8rem;
   text-align: center;
+}
+@media (min-width: 576px) {
+  .infoCreador a {
+    font-size: 0.9rem;
+  }
 }
 
 /* index */
@@ -126,6 +147,11 @@ main .aboutUs .p_bienvenidos {
   font-weight: bold;
   padding: 0.5em;
 }
+@media (min-width: 992px) {
+  .secciones {
+    font-size: 2rem;
+  }
+}
 
 .servicios {
   width: 100%;
@@ -140,6 +166,12 @@ main .aboutUs .p_bienvenidos {
   font-weight: bold;
   margin-top: 0.5em;
 }
+@media (min-width: 576px) {
+  .tituloServicio {
+    margin-top: 1rem;
+    font-size: 1.7rem;
+  }
+}
 
 .pOurServices {
   font-size: 1rem;
@@ -148,12 +180,22 @@ main .aboutUs .p_bienvenidos {
   margin-bottom: 3rem;
   color: white;
 }
+@media (min-width: 576px) {
+  .pOurServices {
+    font-size: 1.5rem;
+  }
+}
 
 .reseñas p {
   color: white;
   text-align: center;
   font-size: 1rem;
   margin: 2rem;
+}
+@media (min-width: 576px) {
+  .reseñas p {
+    font-size: 1.5rem;
+  }
 }
 
 .clientes {
@@ -180,10 +222,28 @@ main .aboutUs .p_bienvenidos {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
+@media (min-width: 576px) {
+  .nuestroTeam .divNuestroTeam {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media (min-width: 992px) {
+  .nuestroTeam .divNuestroTeam {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
 .nuestroTeam .divNuestroTeam .divNuestroTeamIzq, .nuestroTeam .divNuestroTeam .divNuestroTeamDer {
   display: flex;
   flex-direction: column;
   margin-bottom: 2rem;
+}
+@media (min-width: 992px) {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq, .nuestroTeam .divNuestroTeam .divNuestroTeamDer {
+    flex-direction: row;
+    margin-top: 2rem;
+  }
 }
 .nuestroTeam .divNuestroTeam .divNuestroTeamIzq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer h2 {
   font-size: 2em;
@@ -191,6 +251,18 @@ main .aboutUs .p_bienvenidos {
   margin-top: 1rem;
   margin-bottom: 1rem;
   color: #B9F852;
+}
+@media (min-width: 576px) {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer h2 {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer h2 {
+    font-size: 2rem;
+    text-align: left;
+    padding-left: 5%;
+  }
 }
 .nuestroTeam .divNuestroTeam .divNuestroTeamIzq .nuestroTeam-img .profes, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .nuestroTeam-img .profes {
   height: auto;
@@ -204,6 +276,24 @@ main .aboutUs .p_bienvenidos {
   font-size: 1rem;
   color: white;
 }
+@media (min-width: 576px) {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer p {
+    font-size: 1.4rem;
+    text-align: left;
+    padding-left: 5%;
+  }
+}
+@media (min-width: 992px) {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamDer {
+    flex-direction: row-reverse;
+  }
+}
+
 /* planes */
 .nuestrosPlanes {
   margin-top: 7rem;
@@ -251,11 +341,22 @@ main .aboutUs .p_bienvenidos {
   margin-top: 1rem;
 }
 
+@media (min-width: 768px) {
+  .nuestrosHorarios div {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 .nuestrosHorarios div img {
   width: 95%;
 }
 .nuestrosHorarios div p {
   font-size: 1rem;
+}
+@media (min-width: 768px) {
+  .nuestrosHorarios div p {
+    font-size: 1.5rem;
+  }
 }
 
 /* faqs */
@@ -273,6 +374,11 @@ main .aboutUs .p_bienvenidos {
   border-color: green;
   color: inherit;
 }
+@media (min-width: 576px) {
+  .preguntasFrecuentes .FAQsAccordion .accordion-button {
+    font-size: 1.5rem;
+  }
+}
 .preguntasFrecuentes .FAQsAccordion .accordion-button:not(.collapsed) {
   background: #B9F852;
   color: inherit;
@@ -281,6 +387,11 @@ main .aboutUs .p_bienvenidos {
   font-size: 1rem;
   font-weight: bold;
   margin-top: 1rem;
+}
+@media (min-width: 576px) {
+  .preguntasFrecuentes .FAQsAccordion .accordion-body {
+    font-size: 1.5rem;
+  }
 }
 
 /* contacto */
@@ -302,12 +413,22 @@ main .aboutUs .p_bienvenidos {
   width: 95%;
   height: auto;
 }
+@media (min-width: 768px) {
+  .contacto .formularioContacto {
+    max-width: 600px;
+  }
+}
 .contacto .formularioContacto input {
   padding: 0.2em 1em 0.2em 1em;
   border-radius: 5px;
   border-style: solid;
   border-width: 1px;
   border-color: black;
+}
+@media (min-width: 576px) {
+  .contacto .formularioContacto input {
+    font-size: 1.5rem;
+  }
 }
 .contacto .formularioContacto form {
   display: flex;
@@ -317,11 +438,21 @@ main .aboutUs .p_bienvenidos {
   font-size: 1rem;
   color: white;
 }
+@media (min-width: 576px) {
+  .contacto .formularioContacto form label {
+    font-size: 1.5rem;
+  }
+}
 .contacto .formularioContacto form #Enviar {
   width: 7rem;
   text-align: center;
   font-size: 1em;
   margin-top: 1rem;
+}
+@media (min-width: 576px) {
+  .contacto .formularioContacto form #Enviar {
+    font-size: 1.5em;
+  }
 }
 .contacto .formularioContacto form textarea {
   width: 100%;
@@ -333,6 +464,11 @@ main .aboutUs .p_bienvenidos {
   border-width: 1px;
   border-color: black;
 }
+@media (min-width: 576px) {
+  .contacto .formularioContacto form textarea {
+    font-size: 1.5rem;
+  }
+}
 .contacto .formularioContacto .enviar {
   align-items: center;
 }
@@ -342,6 +478,17 @@ main .aboutUs .p_bienvenidos {
   font-size: 1rem;
   color: white;
   margin-top: 3rem;
+}
+@media (min-width: 576px) {
+  .pContacto, .pContacto3, .pContacto2 {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .pContacto, .pContacto3, .pContacto2 {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
 }
 
 .pContacto2 {
@@ -361,5 +508,21 @@ main .aboutUs .p_bienvenidos {
 }
 .mapa iframe {
   width: 100%;
-  height: auto;
+  height: 200px;
+}
+@media (min-width: 576px) {
+  .mapa iframe {
+    width: 80%;
+    height: 300px;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media (min-width: 768px) {
+  .mapa iframe {
+    width: 70%;
+    height: 500px;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }/*# sourceMappingURL=style.css.map */
