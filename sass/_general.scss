@@ -33,6 +33,10 @@ header {
 
         .nav-item {
             font-size: 1.5rem;
+
+            @include big-desktop {
+                margin-right: 1rem;
+            }
         }
     }
 }
@@ -70,6 +74,7 @@ footer {
         flex-direction: column;
         align-items: center;
         margin: 2rem 0.5rem 0rem 0.5rem;
+
         @include small-desktop {
             flex-direction: row;
         }
@@ -77,8 +82,10 @@ footer {
         .infoGym {
             text-align: center;
             margin-bottom: 2rem;
+
             @include small-desktop {
                 text-align: left;
+                margin-left: 1rem;
             }
 
             p {
@@ -95,13 +102,17 @@ footer {
 
     .socialMedia {
         text-align: center;
+
         @include small-desktop {
-            text-align: right;
+            text-align: center;
+            margin-left: auto;
+            margin-right: 1rem;
         }
 
         i {
             margin: 0rem 0.5rem 2rem 0.5rem;
             font-size: 1.5rem;
+
             @include big-mobile {
                 font-size: 2rem;
             }
@@ -111,6 +122,7 @@ footer {
             color: white;
             font-size: 0.8rem;
             margin-bottom: 0.3rem;
+
             @include big-mobile {
                 font-size: 1.2rem;
             }
@@ -127,9 +139,13 @@ footer {
         color: white;
         font-size: 0.8rem;
         text-align: center;
+
         @include big-mobile {
-        font-size: 0.9rem;
+            font-size: 0.9rem;
+        }
+
+        @include small-desktop {
+            font-size: 1rem;
         }
     }
 }
-

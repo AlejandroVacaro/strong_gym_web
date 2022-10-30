@@ -5,9 +5,14 @@
 
     .promo {
         text-align: center;
+
         img {
             width: 93%;
             height: auto;
+
+            @include big-desktop {
+                width: auto;
+            }
         }
     }
 
@@ -21,12 +26,13 @@
         div {
             padding: 0;
             text-align: center;
+
             img {
-            width: 90%;
-            height: auto;
-            margin-left: 2.5%;
-            margin-right: 2.5%;
-            margin-top: 2rem;
+                width: 90%;
+                height: auto;
+                margin-left: 2.5%;
+                margin-right: 2.5%;
+                margin-top: 2rem;
             }
         }
     }

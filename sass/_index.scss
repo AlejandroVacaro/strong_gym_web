@@ -8,6 +8,10 @@ main {
         font-size: 5rem;
         font-family: 'Bebas Neue', cursive;
         margin-top: 1rem;
+
+        @include big-desktop {
+            font-size: 7rem;
+        }
     }
 
     .aboutUs {
@@ -22,6 +26,10 @@ main {
             font-size: 2.5rem;
             text-align: center;
             color: #B9F852;
+
+            @include big-desktop {
+                font-size: 3rem;
+            }
         }
     }
 
@@ -38,8 +46,9 @@ main {
     color: #212121;
     font-weight: bold;
     padding: 0.5em;
+
     @include small-desktop {
-            font-size: 2rem;
+        font-size: 2rem;
     }
 }
 
@@ -55,6 +64,7 @@ main {
 .tituloServicio {
     font-weight: bold;
     margin-top: 0.5em;
+
     @include big-mobile {
         margin-top: 1rem;
         font-size: 1.7rem;
@@ -67,8 +77,13 @@ main {
     margin-top: 0.5em;
     margin-bottom: 3rem;
     color: white;
+
     @include big-mobile {
         font-size: 1.5rem;
+    }
+
+    @include tablet {
+        text-align: left;
     }
 }
 
@@ -78,8 +93,13 @@ main {
     text-align: center;
     font-size: 1rem;
     margin: 2rem;
+
     @include big-mobile {
         font-size: 1.5rem;
+    }
+
+    @include tablet {
+        text-align: left;
     }
 }
 

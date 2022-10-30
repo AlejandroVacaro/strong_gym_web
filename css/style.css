@@ -31,6 +31,11 @@ header .navbar-margin li a {
 header .navbar-margin .nav-item {
   font-size: 1.5rem;
 }
+@media (min-width: 1200px) {
+  header .navbar-margin .nav-item {
+    margin-right: 1rem;
+  }
+}
 
 /* subtitulos */
 .subtitulos {
@@ -74,6 +79,7 @@ footer section .infoGym {
 @media (min-width: 992px) {
   footer section .infoGym {
     text-align: left;
+    margin-left: 1rem;
   }
 }
 footer section .infoGym p {
@@ -91,7 +97,9 @@ footer .socialMedia {
 }
 @media (min-width: 992px) {
   footer .socialMedia {
-    text-align: right;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 1rem;
   }
 }
 footer .socialMedia i {
@@ -129,6 +137,11 @@ footer .socialMedia p {
     font-size: 0.9rem;
   }
 }
+@media (min-width: 992px) {
+  .infoCreador a {
+    font-size: 1rem;
+  }
+}
 
 /* index */
 main h1 {
@@ -137,6 +150,11 @@ main h1 {
   font-size: 5rem;
   font-family: "Bebas Neue", cursive;
   margin-top: 1rem;
+}
+@media (min-width: 1200px) {
+  main h1 {
+    font-size: 7rem;
+  }
 }
 main .aboutUs {
   margin: 1rem 1rem 0rem 1rem;
@@ -150,6 +168,11 @@ main .aboutUs .p_bienvenidos {
   font-size: 2.5rem;
   text-align: center;
   color: #B9F852;
+}
+@media (min-width: 1200px) {
+  main .aboutUs .p_bienvenidos {
+    font-size: 3rem;
+  }
 }
 
 .secciones {
@@ -200,6 +223,11 @@ main .aboutUs .p_bienvenidos {
     font-size: 1.5rem;
   }
 }
+@media (min-width: 768px) {
+  .pOurServices {
+    text-align: left;
+  }
+}
 
 .reseñas p {
   color: white;
@@ -210,6 +238,11 @@ main .aboutUs .p_bienvenidos {
 @media (min-width: 576px) {
   .reseñas p {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .reseñas p {
+    text-align: left;
   }
 }
 
@@ -250,6 +283,12 @@ main .aboutUs .p_bienvenidos {
     margin-right: 5%;
   }
 }
+@media (min-width: 1200px) {
+  .nuestroTeam .divNuestroTeam {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
 .nuestroTeam .divNuestroTeam .divNuestroTeamIzq, .nuestroTeam .divNuestroTeam .divNuestroTeamDer {
   display: flex;
   flex-direction: column;
@@ -261,7 +300,15 @@ main .aboutUs .p_bienvenidos {
     flex-direction: row;
   }
 }
-.nuestroTeam .divNuestroTeam .divNuestroTeamIzq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer h2 {
+.nuestroTeam .divNuestroTeam .divNuestroTeamIzq .izq, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .izq, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .der {
+  padding: 1rem 0;
+}
+@media (min-width: 1200px) {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq .izq, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .izq, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .der {
+    padding: 2rem 0;
+  }
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeamIzq .izq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .izq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .der h2 {
   font-size: 2em;
   text-align: center;
   margin-top: 1rem;
@@ -269,15 +316,33 @@ main .aboutUs .p_bienvenidos {
   color: #B9F852;
 }
 @media (min-width: 576px) {
-  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer h2 {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq .izq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .izq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .der h2 {
     font-size: 2.5rem;
   }
 }
 @media (min-width: 992px) {
-  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer h2 {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq .izq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .izq h2, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .der h2 {
     font-size: 2rem;
     text-align: left;
     padding-left: 5%;
+  }
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeamIzq .izq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .izq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .der p {
+  text-align: center;
+  font-size: 1rem;
+  color: white;
+}
+@media (min-width: 576px) {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq .izq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .izq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .der p {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq .izq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .izq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .der p {
+    font-size: 1.4rem;
+    text-align: left;
+    padding-left: 5%;
+    margin-bottom: 0;
   }
 }
 .nuestroTeam .divNuestroTeam .divNuestroTeamIzq .nuestroTeam-img .profes, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .nuestroTeam-img .profes {
@@ -292,27 +357,22 @@ main .aboutUs .p_bienvenidos {
     width: 250px;
   }
 }
-.nuestroTeam .divNuestroTeam .divNuestroTeamIzq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer p {
-  text-align: center;
-  font-size: 1rem;
-  color: white;
-}
-@media (min-width: 576px) {
-  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer p {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 992px) {
-  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq p, .nuestroTeam .divNuestroTeam .divNuestroTeamDer p {
-    font-size: 1.4rem;
-    text-align: left;
-    padding-left: 5%;
+@media (min-width: 1200px) {
+  .nuestroTeam .divNuestroTeam .divNuestroTeamIzq .nuestroTeam-img .profes, .nuestroTeam .divNuestroTeam .divNuestroTeamDer .nuestroTeam-img .profes {
+    width: 300px;
   }
 }
 @media (min-width: 992px) {
   .nuestroTeam .divNuestroTeam .divNuestroTeamDer {
     flex-direction: row-reverse;
   }
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeamDer .der h2 {
+  padding-left: 0%;
+}
+.nuestroTeam .divNuestroTeam .divNuestroTeamDer .der p {
+  padding-left: 0%;
+  padding-right: 5%;
 }
 
 /* planes */
@@ -325,6 +385,11 @@ main .aboutUs .p_bienvenidos {
 .nuestrosPlanes .promo img {
   width: 93%;
   height: auto;
+}
+@media (min-width: 1200px) {
+  .nuestrosPlanes .promo img {
+    width: auto;
+  }
 }
 .nuestrosPlanes .planes {
   display: flex;
@@ -400,6 +465,11 @@ main .aboutUs .p_bienvenidos {
     font-size: 1.5rem;
   }
 }
+@media (min-width: 1200px) {
+  .preguntasFrecuentes .FAQsAccordion .accordion-button {
+    font-size: 1.3rem;
+  }
+}
 .preguntasFrecuentes .FAQsAccordion .accordion-button:not(.collapsed) {
   background: #B9F852;
   color: inherit;
@@ -412,6 +482,11 @@ main .aboutUs .p_bienvenidos {
 @media (min-width: 576px) {
   .preguntasFrecuentes .FAQsAccordion .accordion-body {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .preguntasFrecuentes .FAQsAccordion .accordion-body {
+    font-size: 1.3rem;
   }
 }
 
@@ -429,6 +504,14 @@ main .aboutUs .p_bienvenidos {
 .contacto .imgFormulario .imgMancuerna {
   display: none;
 }
+@media (min-width: 1200px) {
+  .contacto .imgFormulario .imgMancuerna {
+    display: contents;
+  }
+}
+.contacto .imgFormulario .imgMancuerna .imgContacto {
+  margin-right: 5%;
+}
 .contacto .formularioContacto {
   border-radius: 10px;
   width: 95%;
@@ -437,6 +520,8 @@ main .aboutUs .p_bienvenidos {
 @media (min-width: 768px) {
   .contacto .formularioContacto {
     max-width: 600px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
 .contacto .formularioContacto input {
@@ -449,6 +534,11 @@ main .aboutUs .p_bienvenidos {
 @media (min-width: 576px) {
   .contacto .formularioContacto input {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contacto .formularioContacto input {
+    font-size: 1.2rem;
   }
 }
 .contacto .formularioContacto form {
@@ -464,6 +554,11 @@ main .aboutUs .p_bienvenidos {
     font-size: 1.5rem;
   }
 }
+@media (min-width: 1200px) {
+  .contacto .formularioContacto form label {
+    font-size: 1.2rem;
+  }
+}
 .contacto .formularioContacto form #Enviar {
   width: 7rem;
   text-align: center;
@@ -473,6 +568,11 @@ main .aboutUs .p_bienvenidos {
 @media (min-width: 576px) {
   .contacto .formularioContacto form #Enviar {
     font-size: 1.5em;
+  }
+}
+@media (min-width: 1200px) {
+  .contacto .formularioContacto form #Enviar {
+    font-size: 1.2rem;
   }
 }
 .contacto .formularioContacto form textarea {
@@ -488,6 +588,11 @@ main .aboutUs .p_bienvenidos {
 @media (min-width: 576px) {
   .contacto .formularioContacto form textarea {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .contacto .formularioContacto form textarea {
+    font-size: 1.2rem;
   }
 }
 .contacto .formularioContacto .enviar {

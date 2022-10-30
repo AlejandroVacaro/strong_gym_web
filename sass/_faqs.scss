@@ -2,33 +2,44 @@
 
 .preguntasFrecuentes {
     margin-top: 7rem;
+
     .FAQsAccordion {
         margin-left: 2.5%;
         margin-right: 2.5%;
+
         .accordion-button {
             font-size: 1rem;
             font-weight: bold;
             background: inherit;
             border-color: green;
-            color: inherit;  
+            color: inherit;
+
             @include big-mobile {
                 font-size: 1.5rem;
             }
+
+            @include big-desktop {
+                font-size: 1.3rem;
+            }
         }
+
         .accordion-button:not(.collapsed) {
             background: #B9F852;
             color: inherit;
         }
+
         .accordion-body {
             font-size: 1rem;
             font-weight: bold;
             margin-top: 1rem;
+
             @include big-mobile {
                 font-size: 1.5rem;
             }
+
+            @include big-desktop {
+                font-size: 1.3rem;
+            }
         }
-    }    
+    }
 }
-
-
-
